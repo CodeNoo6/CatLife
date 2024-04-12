@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gandalf/Downloads/CatLife-main/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml",
+            "outputFile": "/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml",
             "map": [
                 {
                     "source": "/Users/gandalf/.gradle/caches/transforms-3/613aed6e063b1a3e06a392156b8b0fb8/transformed/jetified-play-services-basement-18.1.0/res/values-mk/values.xml",
