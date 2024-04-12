@@ -23,7 +23,7 @@ import 'MenuPage.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  await FirebaseApi().initNotifications();
+  //await FirebaseApi().initNotifications();
   runApp(MyApp());
 }
 

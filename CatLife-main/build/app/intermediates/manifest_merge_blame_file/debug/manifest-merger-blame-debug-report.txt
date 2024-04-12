@@ -12,107 +12,107 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:5:1-63
-14-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:5:18-60
+14-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:5:1-63
+14-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:5:18-60
 15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-15-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:2:1-75
-15-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:2:18-72
+15-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:2:1-75
+15-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:2:18-72
 16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-16-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:3:1-77
-16-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:3:18-74
+16-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:3:1-77
+16-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:3:18-74
 17    <uses-permission android:name="android.permission.CALL_PHONE" />
-17-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:4:1-65
-17-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:4:18-62
+17-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:4:1-65
+17-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:4:18-62
 18    <uses-permission android:name="android.permission.WAKE_LOCK" />
-18-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
-18-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+18-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+18-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
 19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
-19-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
-19-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
+19-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+19-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
 20    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-20-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
-20-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-74
+20-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
+20-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-74
 21    <uses-permission android:name="android.permission.CAMERA" />
-21-->[:camera_android] /Users/gandalf/Downloads/CatLife-main/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-65
-21-->[:camera_android] /Users/gandalf/Downloads/CatLife-main/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-62
+21-->[:camera_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-65
+21-->[:camera_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-62
 22    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-22-->[:camera_android] /Users/gandalf/Downloads/CatLife-main/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-71
-22-->[:camera_android] /Users/gandalf/Downloads/CatLife-main/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-68
+22-->[:camera_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-71
+22-->[:camera_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-68
 23
 24    <queries>
-24-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-34:15
+24-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-34:15
 25        <package android:name="com.google.android.apps.maps" />
-25-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-64
-25-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-61
+25-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-64
+25-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-61
 26        <package android:name="com.google.android.apps.mapslite" />
-26-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-68
-26-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:11:18-65
+26-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-68
+26-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:11:18-65
 27        <package android:name="com.autonavi.minimap" />
-27-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-56
-27-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:12:18-53
+27-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-56
+27-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:12:18-53
 28        <package android:name="com.baidu.BaiduMap" />
-28-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-54
-28-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:13:18-51
+28-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-54
+28-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:13:18-51
 29        <package android:name="com.waze" />
-29-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-44
-29-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:14:18-41
+29-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-44
+29-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:14:18-41
 30        <package android:name="ru.yandex.yandexnavi" />
-30-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-56
-30-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:15:18-53
+30-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-56
+30-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:15:18-53
 31        <package android:name="ru.yandex.yandexmaps" />
-31-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-56
-31-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:16:18-53
+31-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-56
+31-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:16:18-53
 32        <package android:name="com.citymapper.app.release" />
-32-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-62
-32-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:17:18-59
+32-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-62
+32-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:17:18-59
 33        <package android:name="com.mapswithme.maps.pro" />
-33-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-59
-33-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:18:18-56
+33-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-59
+33-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:18:18-56
 34        <package android:name="net.osmand" />
-34-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-46
-34-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:19:18-43
+34-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-46
+34-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:19:18-43
 35        <package android:name="net.osmand.plus" />
-35-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:20:9-51
-35-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:20:18-48
+35-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:20:9-51
+35-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:20:18-48
 36        <package android:name="ru.dublgis.dgismobile" />
-36-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:21:9-57
-36-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:21:18-54
+36-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:21:9-57
+36-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:21:18-54
 37        <package android:name="com.tencent.map" />
-37-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-51
-37-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:22:18-48
+37-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-51
+37-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:22:18-48
 38        <package android:name="com.here.app.maps" />
-38-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:23:9-53
-38-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:23:18-50
+38-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:23:9-53
+38-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:23:18-50
 39        <package android:name="com.huawei.maps.app" />
-39-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:24:9-55
-39-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:24:18-52
+39-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:24:9-55
+39-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:24:18-52
 40        <package android:name="com.alk.copilot.mapviewer" />
-40-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-61
-40-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:25:18-58
+40-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-61
+40-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:25:18-58
 41        <package android:name="com.tomtom.gplay.navapp" />
-41-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-59
-41-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:26:18-56
+41-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-59
+41-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:26:18-56
 42        <package android:name="com.tomtom.gplay.navapp.gofleet" />
-42-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:27:9-67
-42-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:27:18-64
+42-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:27:9-67
+42-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:27:18-64
 43        <package android:name="com.sygic.truck" />
-43-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-51
-43-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:28:18-48
+43-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-51
+43-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:28:18-48
 44        <package android:name="nl.flitsmeister" />
-44-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:29:9-51
-44-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:29:18-48
+44-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:29:9-51
+44-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:29:18-48
 45        <package android:name="nl.flitsmeister.flux" />
-45-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:30:9-56
-45-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:30:18-53
+45-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:30:9-56
+45-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:30:18-53
 46        <package android:name="com.nhn.android.nmap" />
-46-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:31:9-56
-46-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:31:18-53
+46-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:31:9-56
+46-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:31:18-53
 47        <package android:name="net.daum.android.map" />
-47-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:32:9-56
-47-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:32:18-53
+47-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:32:9-56
+47-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:32:18-53
 48        <package android:name="com.skt.tmap.ku" />
-48-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:33:9-51
-48-->[:map_launcher] /Users/gandalf/Downloads/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:33:18-48
+48-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:33:9-51
+48-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:33:18-48
 49    </queries>
 50
 51    <uses-feature
@@ -144,30 +144,30 @@
 63-->[androidx.core:core:1.10.1] /Users/gandalf/.gradle/caches/transforms-3/c6a5c87688fbc2db4efc38c4557e4771/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
 64
 65    <application
-65-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:6:3-43:17
+65-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:6:3-43:17
 66        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 66-->[androidx.core:core:1.10.1] /Users/gandalf/.gradle/caches/transforms-3/c6a5c87688fbc2db4efc38c4557e4771/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
 67        android:debuggable="true"
 68        android:icon="@mipmap/ic_launcher"
-68-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:6:41-75
+68-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:6:41-75
 69        android:label="Cat Life" >
-69-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:6:16-40
+69-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:6:16-40
 70        <activity
-70-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:7:5-32:16
+70-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:5-32:16
 71            android:name="com.GimoMagic.CatLife.MainActivity"
-71-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:7:15-43
+71-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:15-43
 72            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-72-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:7:135-285
+72-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:135-285
 73            android:exported="true"
-73-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:7:44-67
+73-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:44-67
 74            android:hardwareAccelerated="true"
-74-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:7:286-320
+74-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:286-320
 75            android:launchMode="singleTask"
-75-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:7:68-99
+75-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:68-99
 76            android:theme="@style/LaunchTheme"
-76-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:7:100-134
+76-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:100-134
 77            android:windowSoftInputMode="adjustResize" >
-77-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:7:321-363
+77-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:321-363
 78
 79            <!--
 80           Specifies an Android theme to apply to this Activity as soon as
@@ -176,11 +176,11 @@
 83                 to determine the Window background behind the Flutter UI.
 84            -->
 85            <meta-data
-85-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:12:7-114
+85-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:12:7-114
 86                android:name="io.flutter.embedding.android.NormalTheme"
-86-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:12:18-73
+86-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:12:18-73
 87                android:resource="@style/NormalTheme" />
-87-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:12:74-111
+87-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:12:74-111
 88            <!--
 89           Displays an Android View that continues showing the launch screen
 90                 Drawable until Flutter paints its first frame, then this splash
@@ -189,110 +189,110 @@
 93                 Flutter's first frame.
 94            -->
 95            <meta-data
-95-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:18:7-132
+95-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:18:7-132
 96                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-96-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:18:18-82
+96-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:18:18-82
 97                android:resource="@drawable/launch_background" />
-97-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:18:83-129
+97-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:18:83-129
 98
 99            <intent-filter>
-99-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:19:7-22:23
+99-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:19:7-22:23
 100                <action android:name="android.intent.action.MAIN" />
-100-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:20:9-61
-100-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:20:17-58
+100-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:20:9-61
+100-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:20:17-58
 101
 102                <category android:name="android.intent.category.LAUNCHER" />
-102-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:21:9-69
-102-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:21:19-66
+102-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:21:9-69
+102-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:21:19-66
 103            </intent-filter>
 104
 105            <meta-data
-105-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:23:7-84
+105-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:23:7-84
 106                android:name="flutter_deeplinking_enabled"
-106-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:23:18-60
+106-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:23:18-60
 107                android:value="true" />
-107-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:23:61-81
+107-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:23:61-81
 108
 109            <intent-filter android:autoVerify="true" >
-109-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:24:7-31:23
-109-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:24:22-47
+109-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:24:7-31:23
+109-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:24:22-47
 110                <action android:name="android.intent.action.VIEW" />
-110-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:25:9-61
-110-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:25:17-58
+110-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:25:9-61
+110-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:25:17-58
 111
 112                <category android:name="android.intent.category.DEFAULT" />
-112-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:26:9-68
-112-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:26:19-65
+112-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:26:9-68
+112-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:26:19-65
 113                <category android:name="android.intent.category.BROWSABLE" />
-113-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:27:9-70
-113-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:27:19-67
+113-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:27:9-70
+113-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:27:19-67
 114
 115                <data android:scheme="https" />
-115-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:28:9-39
-115-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:28:15-37
+115-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:28:9-39
+115-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:28:15-37
 116                <data android:scheme="http" />
-116-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:28:9-39
-116-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:28:15-37
+116-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:28:9-39
+116-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:28:15-37
 117                <data android:host="gimomagic.com.co" />
-117-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:28:9-39
+117-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:28:9-39
 118            </intent-filter>
 119        </activity>
 120
 121        <meta-data
-121-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:33:5-35:31
+121-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:33:5-35:31
 122            android:name="firebase_messaging_auto_init_enabled"
-122-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:34:7-58
+122-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:34:7-58
 123            android:value="false" />
-123-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:35:7-28
+123-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:35:7-28
 124        <meta-data
-124-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:36:5-38:31
+124-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:36:5-38:31
 125            android:name="firebase_analytics_collection_enabled"
-125-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:37:7-59
+125-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:37:7-59
 126            android:value="false" />
-126-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:38:7-28
+126-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:38:7-28
 127        <!--
 128         Don't delete the meta-data below.
 129             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 130        -->
 131        <meta-data
-131-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:41:5-68
+131-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:41:5-68
 132            android:name="flutterEmbedding"
-132-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:41:16-47
+132-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:41:16-47
 133            android:value="2" />
-133-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:41:48-65
+133-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:41:48-65
 134        <meta-data
-134-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:42:5-120
+134-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:42:5-120
 135            android:name="com.google.android.geo.API_KEY"
-135-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:42:16-61
+135-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:42:16-61
 136            android:value="AIzaSyDBSLtAFqzfVi3X65FDL_9xI9E29a5ZSRs" />
-136-->/Users/gandalf/Downloads/CatLife-main/android/app/src/main/AndroidManifest.xml:42:62-117
+136-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:42:62-117
 137
 138        <service
-138-->[:cloud_firestore] /Users/gandalf/Downloads/CatLife-main/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+138-->[:cloud_firestore] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
 139            android:name="com.google.firebase.components.ComponentDiscoveryService"
-139-->[:cloud_firestore] /Users/gandalf/Downloads/CatLife-main/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
+139-->[:cloud_firestore] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
 140            android:directBootAware="true"
 140-->[com.google.firebase:firebase-common:20.2.0] /Users/gandalf/.gradle/caches/transforms-3/b079baa88a34031222868358cd00aef4/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:34:13-43
 141            android:exported="false" >
 141-->[com.google.firebase:firebase-firestore:24.4.1] /Users/gandalf/.gradle/caches/transforms-3/06eb90d5a392a359afb2bf689de04f74/transformed/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:18:13-37
 142            <meta-data
-142-->[:cloud_firestore] /Users/gandalf/Downloads/CatLife-main/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+142-->[:cloud_firestore] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 143                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-143-->[:cloud_firestore] /Users/gandalf/Downloads/CatLife-main/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
+143-->[:cloud_firestore] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
 144                android:value="com.google.firebase.components.ComponentRegistrar" />
-144-->[:cloud_firestore] /Users/gandalf/Downloads/CatLife-main/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+144-->[:cloud_firestore] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 145            <meta-data
-145-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-40:85
+145-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-40:85
 146                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-146-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:39:17-128
+146-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:39:17-128
 147                android:value="com.google.firebase.components.ComponentRegistrar" />
-147-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:40:17-82
+147-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:40:17-82
 148            <meta-data
-148-->[:firebase_core] /Users/gandalf/Downloads/CatLife-main/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+148-->[:firebase_core] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 149                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-149-->[:firebase_core] /Users/gandalf/Downloads/CatLife-main/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+149-->[:firebase_core] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 150                android:value="com.google.firebase.components.ComponentRegistrar" />
-150-->[:firebase_core] /Users/gandalf/Downloads/CatLife-main/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+150-->[:firebase_core] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 151            <meta-data
 151-->[com.google.firebase:firebase-firestore:24.4.1] /Users/gandalf/.gradle/caches/transforms-3/06eb90d5a392a359afb2bf689de04f74/transformed/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:19:13-21:85
 152                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
@@ -325,91 +325,91 @@
 165-->[com.google.firebase:firebase-datatransport:18.1.6] /Users/gandalf/.gradle/caches/transforms-3/f0fa7b48f9cfda3a2eeb317d672cd0c6/transformed/jetified-firebase-datatransport-18.1.6/AndroidManifest.xml:30:17-82
 166        </service>
 167        <service
-167-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-19:72
+167-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-19:72
 168            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-168-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-107
+168-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-107
 169            android:exported="false"
-169-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+169-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
 170            android:permission="android.permission.BIND_JOB_SERVICE" />
-170-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-69
+170-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-69
 171        <service
-171-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:9-26:19
+171-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:9-26:19
 172            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-172-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-97
+172-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-97
 173            android:exported="false" >
-173-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
+173-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
 174            <intent-filter>
-174-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
+174-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
 175                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-175-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
-175-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
+175-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
+175-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
 176            </intent-filter>
 177        </service>
 178
 179        <receiver
-179-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-35:20
+179-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-35:20
 180            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-180-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-98
+180-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-98
 181            android:exported="true"
-181-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-36
+181-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-36
 182            android:permission="com.google.android.c2dm.permission.SEND" >
-182-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-73
+182-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-73
 183            <intent-filter>
-183-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
+183-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
 184                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-184-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
-184-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
+184-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
+184-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
 185            </intent-filter>
 186        </receiver>
 187
 188        <provider
-188-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:9-47:38
+188-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:9-47:38
 189            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-189-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-102
+189-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-102
 190            android:authorities="com.GimoMagic.CatLife.flutterfirebasemessaginginitprovider"
-190-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-88
+190-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-88
 191            android:exported="false"
-191-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-37
+191-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-37
 192            android:initOrder="99" />
-192-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-35
+192-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-35
 193
 194        <service
-194-->[:geolocator_android] /Users/gandalf/Downloads/CatLife-main/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:56
+194-->[:geolocator_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:56
 195            android:name="com.baseflow.geolocator.GeolocatorLocationService"
-195-->[:geolocator_android] /Users/gandalf/Downloads/CatLife-main/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-77
+195-->[:geolocator_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-77
 196            android:enabled="true"
-196-->[:geolocator_android] /Users/gandalf/Downloads/CatLife-main/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-35
+196-->[:geolocator_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-35
 197            android:exported="false"
-197-->[:geolocator_android] /Users/gandalf/Downloads/CatLife-main/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+197-->[:geolocator_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
 198            android:foregroundServiceType="location" />
-198-->[:geolocator_android] /Users/gandalf/Downloads/CatLife-main/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-53
+198-->[:geolocator_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-53
 199
 200        <provider
-200-->[:image_picker_android] /Users/gandalf/Downloads/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+200-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
 201            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-201-->[:image_picker_android] /Users/gandalf/Downloads/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+201-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
 202            android:authorities="com.GimoMagic.CatLife.flutter.image_provider"
-202-->[:image_picker_android] /Users/gandalf/Downloads/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+202-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
 203            android:exported="false"
-203-->[:image_picker_android] /Users/gandalf/Downloads/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+203-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
 204            android:grantUriPermissions="true" >
-204-->[:image_picker_android] /Users/gandalf/Downloads/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+204-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
 205            <meta-data
-205-->[:image_picker_android] /Users/gandalf/Downloads/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+205-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
 206                android:name="android.support.FILE_PROVIDER_PATHS"
-206-->[:image_picker_android] /Users/gandalf/Downloads/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+206-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
 207                android:resource="@xml/flutter_image_picker_file_paths" />
-207-->[:image_picker_android] /Users/gandalf/Downloads/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+207-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
 208        </provider>
 209
 210        <activity
-210-->[:url_launcher_android] /Users/gandalf/Downloads/CatLife-main/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+210-->[:url_launcher_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
 211            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-211-->[:url_launcher_android] /Users/gandalf/Downloads/CatLife-main/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+211-->[:url_launcher_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
 212            android:exported="false"
-212-->[:url_launcher_android] /Users/gandalf/Downloads/CatLife-main/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+212-->[:url_launcher_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
 213            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" /> <!-- Needs to be explicitly declared on P+ -->
-213-->[:url_launcher_android] /Users/gandalf/Downloads/CatLife-main/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+213-->[:url_launcher_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
 214        <uses-library
 214-->[com.google.android.gms:play-services-maps:18.2.0] /Users/gandalf/.gradle/caches/transforms-3/85f4e7c955e87f510a2fc66c74777171/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
 215            android:name="org.apache.http.legacy"
@@ -480,10 +480,10 @@
 252            android:permission="com.google.android.c2dm.permission.SEND" >
 252-->[com.google.firebase:firebase-messaging:23.0.8] /Users/gandalf/.gradle/caches/transforms-3/7e2c38458e5144d10eb9b30fe8e8143e/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:35:13-73
 253            <intent-filter>
-253-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
+253-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
 254                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-254-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
-254-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
+254-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
+254-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
 255            </intent-filter>
 256        </receiver>
 257        <!--
@@ -499,10 +499,10 @@
 264            android:exported="false" >
 264-->[com.google.firebase:firebase-messaging:23.0.8] /Users/gandalf/.gradle/caches/transforms-3/7e2c38458e5144d10eb9b30fe8e8143e/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:48:13-37
 265            <intent-filter android:priority="-500" >
-265-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
+265-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
 266                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-266-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
-266-->[:firebase_messaging] /Users/gandalf/Downloads/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
+266-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
+266-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
 267            </intent-filter>
 268        </service>
 269
