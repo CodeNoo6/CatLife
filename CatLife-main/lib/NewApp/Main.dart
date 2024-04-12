@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:catage/Database/Database.dart';
-import 'package:catage/Registro.dart';
 import 'package:catage/SplashScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gandalf/Downloads/CatLife-main/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/gandalf/.gradle/caches/transforms-3/c6a5c87688fbc2db4efc38c4557e4771/transformed/core-1.10.1/res/values/values.xml",
@@ -59,25 +59,6 @@
                     }
                 },
                 {
-                    "source": "/Users/gandalf/Downloads/CatLife-main/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,816",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "465,980"
-                    },
-                    "to": {
-                        "startLines": "152,157",
-                        "startColumns": "4,4",
-                        "startOffsets": "10967,11264",
-                        "endLines": "156,159",
-                        "endColumns": "12,12",
-                        "endOffsets": "11259,11428"
-                    }
-                },
-                {
                     "source": "/Users/gandalf/.gradle/caches/transforms-3/91e974a7bd86f1ab2519fec095795aa3/transformed/jetified-window-1.0.0-beta04/res/values/values.xml",
                     "from": {
                         "startLines": "2,7,8,9,10,11,19,23,34,51",
@@ -94,6 +75,23 @@
                         "endLines": "7,8,9,10,89,180,184,399,416,424",
                         "endColumns": "11,59,51,44,59,24,24,24,24,24",
                         "endOffsets": "339,399,451,496,5678,12743,12940,19668,20782,21175"
+                    }
+                },
+                {
+                    "source": "/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "46",
+                        "endOffsets": "97"
+                    },
+                    "to": {
+                        "startLines": "19",
+                        "startColumns": "4",
+                        "startOffsets": "1041",
+                        "endColumns": "46",
+                        "endOffsets": "1083"
                     }
                 },
                 {
@@ -114,23 +112,6 @@
                     }
                 },
                 {
-                    "source": "/Users/gandalf/Downloads/CatLife-main/build/app/generated/res/google-services/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,711",
-                        "endColumns": "143,81,103,108,119,96,73",
-                        "endOffsets": "194,276,380,489,609,706,780"
-                    },
-                    "to": {
-                        "startLines": "140,145,146,147,148,149,150",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "9869,10310,10392,10496,10605,10725,10822",
-                        "endColumns": "143,81,103,108,119,96,73",
-                        "endOffsets": "10008,10387,10491,10600,10720,10817,10891"
-                    }
-                },
-                {
                     "source": "/Users/gandalf/.gradle/caches/transforms-3/613aed6e063b1a3e06a392156b8b0fb8/transformed/jetified-play-services-basement-18.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "4,7",
@@ -145,6 +126,23 @@
                         "startOffsets": "6819,8508",
                         "endColumns": "67,166",
                         "endOffsets": "6882,8670"
+                    }
+                },
+                {
+                    "source": "/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/app/generated/res/google-services/debug/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,711",
+                        "endColumns": "143,81,103,108,119,96,73",
+                        "endOffsets": "194,276,380,489,609,706,780"
+                    },
+                    "to": {
+                        "startLines": "140,145,146,147,148,149,150",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "9869,10310,10392,10496,10605,10725,10822",
+                        "endColumns": "143,81,103,108,119,96,73",
+                        "endOffsets": "10008,10387,10491,10600,10720,10817,10891"
                     }
                 },
                 {
@@ -179,23 +177,6 @@
                         "startOffsets": "661,719,785,848,1891,1962,9801,10013,10080,10159",
                         "endColumns": "57,65,62,61,70,71,67,66,78,68",
                         "endOffsets": "714,780,843,905,1957,2029,9864,10075,10154,10223"
-                    }
-                },
-                {
-                    "source": "/Users/gandalf/Downloads/CatLife-main/android/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "46",
-                        "endOffsets": "97"
-                    },
-                    "to": {
-                        "startLines": "19",
-                        "startColumns": "4",
-                        "startOffsets": "1041",
-                        "endColumns": "46",
-                        "endOffsets": "1083"
                     }
                 },
                 {
@@ -249,6 +230,25 @@
                         "startOffsets": "10228",
                         "endColumns": "81",
                         "endOffsets": "10305"
+                    }
+                },
+                {
+                    "source": "/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,816",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "465,980"
+                    },
+                    "to": {
+                        "startLines": "152,157",
+                        "startColumns": "4,4",
+                        "startOffsets": "10967,11264",
+                        "endLines": "156,159",
+                        "endColumns": "12,12",
+                        "endOffsets": "11259,11428"
                     }
                 }
             ]
