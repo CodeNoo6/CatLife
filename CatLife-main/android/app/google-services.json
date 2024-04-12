@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "477759819895",
+    "project_id": "catlife-ae128",
+    "storage_bucket": "catlife-ae128.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477759819895:android:c57443870779aa5a697672",
+        "android_client_info": {
+          "package_name": "com.GimoMagic.CatLife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477759819895-1fr29nk5md5dl6fhqrj54p6n1dnr4h47.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.GimoMagic.CatLife",
+            "certificate_hash": "671cafc26ddf4b43a6bce79b11ceeb9a8b6ab942"
+          }
+        },
+        {
+          "client_id": "477759819895-hatlqgdqkm0ro4kj1f98gi7gu1fuh0vb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3Ay6ZjnOSvp5gpOl6PMOnS91caNVslfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477759819895-hatlqgdqkm0ro4kj1f98gi7gu1fuh0vb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "477759819895-aslheah6lgap959j0qgu2rtaj90epic8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.catage"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
