@@ -1,0 +1,828 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.GimoMagic.CatLife"
+4    android:versionCode="40"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:2:1-75
+11-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:2:18-72
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:3:1-77
+12-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:3:18-74
+13    <uses-permission android:name="android.permission.CALL_PHONE" />
+13-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:4:1-65
+13-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:4:18-62
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:5:1-63
+14-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:5:18-60
+15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+15-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-81
+15-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-78
+16    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+16-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-82
+16-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-79
+17    <uses-permission android:name="android.permission.WAKE_LOCK" />
+17-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-68
+17-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-65
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+18-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-79
+18-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-76
+19    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+19-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-77
+19-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:13:22-74
+20
+21    <queries>
+21-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-34:15
+22        <package android:name="com.google.android.apps.maps" />
+22-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-64
+22-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:10:18-61
+23        <package android:name="com.google.android.apps.mapslite" />
+23-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:11:9-68
+23-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:11:18-65
+24        <package android:name="com.autonavi.minimap" />
+24-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-56
+24-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:12:18-53
+25        <package android:name="com.baidu.BaiduMap" />
+25-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:13:9-54
+25-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:13:18-51
+26        <package android:name="com.waze" />
+26-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-44
+26-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:14:18-41
+27        <package android:name="ru.yandex.yandexnavi" />
+27-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-56
+27-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:15:18-53
+28        <package android:name="ru.yandex.yandexmaps" />
+28-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-56
+28-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:16:18-53
+29        <package android:name="com.citymapper.app.release" />
+29-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:17:9-62
+29-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:17:18-59
+30        <package android:name="com.mapswithme.maps.pro" />
+30-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:18:9-59
+30-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:18:18-56
+31        <package android:name="net.osmand" />
+31-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:19:9-46
+31-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:19:18-43
+32        <package android:name="net.osmand.plus" />
+32-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:20:9-51
+32-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:20:18-48
+33        <package android:name="ru.dublgis.dgismobile" />
+33-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:21:9-57
+33-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:21:18-54
+34        <package android:name="com.tencent.map" />
+34-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:22:9-51
+34-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:22:18-48
+35        <package android:name="com.here.app.maps" />
+35-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:23:9-53
+35-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:23:18-50
+36        <package android:name="com.huawei.maps.app" />
+36-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:24:9-55
+36-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:24:18-52
+37        <package android:name="com.alk.copilot.mapviewer" />
+37-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:25:9-61
+37-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:25:18-58
+38        <package android:name="com.tomtom.gplay.navapp" />
+38-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:26:9-59
+38-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:26:18-56
+39        <package android:name="com.tomtom.gplay.navapp.gofleet" />
+39-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:27:9-67
+39-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:27:18-64
+40        <package android:name="com.sygic.truck" />
+40-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:28:9-51
+40-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:28:18-48
+41        <package android:name="nl.flitsmeister" />
+41-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:29:9-51
+41-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:29:18-48
+42        <package android:name="nl.flitsmeister.flux" />
+42-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:30:9-56
+42-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:30:18-53
+43        <package android:name="com.nhn.android.nmap" />
+43-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:31:9-56
+43-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:31:18-53
+44        <package android:name="net.daum.android.map" />
+44-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:32:9-56
+44-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:32:18-53
+45        <package android:name="com.skt.tmap.ku" />
+45-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:33:9-51
+45-->[:map_launcher] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/map_launcher/intermediates/merged_manifest/release/AndroidManifest.xml:33:18-48
+46    </queries>
+47
+48    <uses-permission android:name="android.permission.CAMERA" />
+48-->[:camera_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/camera_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-65
+48-->[:camera_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/camera_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-62
+49    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+49-->[:camera_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/camera_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-71
+49-->[:camera_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/camera_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-68
+50    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+50-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-89
+50-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-86
+51    <uses-permission android:name="android.permission.VIBRATE" />
+51-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:12:5-66
+51-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:12:22-63
+52
+53    <uses-feature
+53-->[com.google.android.gms:play-services-maps:18.2.0] /private/var/root/.gradle/caches/transforms-3/85f4e7c955e87f510a2fc66c74777171/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
+54        android:glEsVersion="0x00020000"
+54-->[com.google.android.gms:play-services-maps:18.2.0] /private/var/root/.gradle/caches/transforms-3/85f4e7c955e87f510a2fc66c74777171/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:27:9-41
+55        android:required="true" />
+55-->[com.google.android.gms:play-services-maps:18.2.0] /private/var/root/.gradle/caches/transforms-3/85f4e7c955e87f510a2fc66c74777171/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:28:9-32
+56
+57    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+57-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:26:5-110
+57-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:26:22-107
+58    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+58-->[com.google.android.gms:play-services-measurement-api:21.2.0] /private/var/root/.gradle/caches/transforms-3/3c52b5206943d770d29abf58e0d43a5e/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:25:5-79
+58-->[com.google.android.gms:play-services-measurement-api:21.2.0] /private/var/root/.gradle/caches/transforms-3/3c52b5206943d770d29abf58e0d43a5e/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:25:22-76
+59
+60    <permission
+60-->[androidx.core:core:1.10.1] /private/var/root/.gradle/caches/transforms-3/c6a5c87688fbc2db4efc38c4557e4771/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+61        android:name="com.GimoMagic.CatLife.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+61-->[androidx.core:core:1.10.1] /private/var/root/.gradle/caches/transforms-3/c6a5c87688fbc2db4efc38c4557e4771/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+62        android:protectionLevel="signature" />
+62-->[androidx.core:core:1.10.1] /private/var/root/.gradle/caches/transforms-3/c6a5c87688fbc2db4efc38c4557e4771/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+63
+64    <uses-permission android:name="com.GimoMagic.CatLife.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- for android -->
+64-->[androidx.core:core:1.10.1] /private/var/root/.gradle/caches/transforms-3/c6a5c87688fbc2db4efc38c4557e4771/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+64-->[androidx.core:core:1.10.1] /private/var/root/.gradle/caches/transforms-3/c6a5c87688fbc2db4efc38c4557e4771/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+65    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+66    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+67    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+68    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+69    <!-- for Samsung -->
+70    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+70-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+70-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+71    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+71-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+71-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+72    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+72-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+72-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+73    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+73-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+73-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+74    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+74-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+74-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+75    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+75-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+75-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+76    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+76-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+76-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+77    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+77-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+77-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+78    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+78-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+78-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+79    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+79-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+79-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+80    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+80-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+80-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+81    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+81-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+81-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+82    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+82-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+82-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+83    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+83-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+83-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+84    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+84-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+84-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+85    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+85-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+85-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+86
+87    <application
+87-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:6:3-40:17
+88        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+88-->[androidx.core:core:1.10.1] /private/var/root/.gradle/caches/transforms-3/c6a5c87688fbc2db4efc38c4557e4771/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+89        android:extractNativeLibs="false"
+90        android:icon="@mipmap/ic_launcher"
+90-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:6:41-75
+91        android:label="Cat Life" >
+91-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:6:16-40
+92        <activity
+92-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:5-32:16
+93            android:name="com.GimoMagic.CatLife.MainActivity"
+93-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:15-43
+94            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+94-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:135-285
+95            android:exported="true"
+95-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:44-67
+96            android:hardwareAccelerated="true"
+96-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:286-320
+97            android:launchMode="singleTask"
+97-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:68-99
+98            android:theme="@style/LaunchTheme"
+98-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:100-134
+99            android:windowSoftInputMode="adjustResize" >
+99-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:7:321-363
+100
+101            <!--
+102           Specifies an Android theme to apply to this Activity as soon as
+103                 the Android process has started. This theme is visible to the user
+104                 while the Flutter UI initializes. After that, this theme continues
+105                 to determine the Window background behind the Flutter UI.
+106            -->
+107            <meta-data
+107-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:12:7-114
+108                android:name="io.flutter.embedding.android.NormalTheme"
+108-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:12:18-73
+109                android:resource="@style/NormalTheme" />
+109-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:12:74-111
+110            <!--
+111           Displays an Android View that continues showing the launch screen
+112                 Drawable until Flutter paints its first frame, then this splash
+113                 screen fades out. A splash screen is useful to avoid any visual
+114                 gap between the end of Android's launch screen and the painting of
+115                 Flutter's first frame.
+116            -->
+117            <meta-data
+117-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:18:7-132
+118                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+118-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:18:18-82
+119                android:resource="@drawable/launch_background" />
+119-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:18:83-129
+120
+121            <intent-filter>
+121-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:19:7-22:23
+122                <action android:name="android.intent.action.MAIN" />
+122-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:20:9-61
+122-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:20:17-58
+123
+124                <category android:name="android.intent.category.LAUNCHER" />
+124-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:21:9-69
+124-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:21:19-66
+125            </intent-filter>
+126
+127            <meta-data
+127-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:23:7-84
+128                android:name="flutter_deeplinking_enabled"
+128-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:23:18-60
+129                android:value="true" />
+129-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:23:61-81
+130
+131            <intent-filter android:autoVerify="true" >
+131-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:24:7-31:23
+131-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:24:22-47
+132                <action android:name="android.intent.action.VIEW" />
+132-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:25:9-61
+132-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:25:17-58
+133
+134                <category android:name="android.intent.category.DEFAULT" />
+134-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:26:9-68
+134-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:26:19-65
+135                <category android:name="android.intent.category.BROWSABLE" />
+135-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:27:9-70
+135-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:27:19-67
+136
+137                <data android:scheme="https" />
+137-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:28:9-39
+137-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:28:15-37
+138                <data android:scheme="http" />
+138-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:28:9-39
+138-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:28:15-37
+139                <data android:host="gimomagic.com.co" />
+139-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:28:9-39
+139-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:30:15-46
+140            </intent-filter>
+141        </activity>
+142
+143        <meta-data
+143-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:33:5-35:31
+144            android:name="firebase_analytics_collection_enabled"
+144-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:34:7-59
+145            android:value="false" />
+145-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:35:7-28
+146        <!--
+147         Don't delete the meta-data below.
+148             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+149        -->
+150        <meta-data
+150-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:38:5-68
+151            android:name="flutterEmbedding"
+151-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:38:16-47
+152            android:value="2" />
+152-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:38:48-65
+153        <meta-data
+153-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:39:5-120
+154            android:name="com.google.android.geo.API_KEY"
+154-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:39:16-61
+155            android:value="AIzaSyDBSLtAFqzfVi3X65FDL_9xI9E29a5ZSRs" />
+155-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:39:62-117
+156        <meta-data
+156-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-16:36
+157            android:name="firebase_messaging_auto_init_enabled"
+157-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-64
+158            android:value="true" />
+158-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-33
+159        <meta-data
+159-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:17:9-19:36
+160            android:name="delivery_metrics_exported_to_big_query_enabled"
+160-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-74
+161            android:value="true" />
+161-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-33
+162
+163        <receiver
+163-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:21:9-29:20
+164            android:name="me.carda.awesome_notifications_fcm.core.services.BootBroadcastReceiver"
+164-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-98
+165            android:exported="true" >
+165-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-36
+166            <intent-filter>
+166-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-28:29
+167                <action android:name="android.intent.action.BOOT_COMPLETED" />
+167-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:25:17-79
+167-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:25:25-76
+168
+169                <category android:name="android.intent.category.HOME" />
+169-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:27:17-73
+169-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:27:27-70
+170            </intent-filter>
+171        </receiver>
+172
+173        <service
+173-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:31:9-38:19
+174            android:name="me.carda.awesome_notifications_fcm.DartFcmService"
+174-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-77
+175            android:directBootAware="true"
+175-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:33:13-43
+176            android:exported="false" >
+176-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:34:13-37
+177            <intent-filter>
+177-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:35:13-37:29
+178                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+178-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:36:17-78
+178-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:36:25-75
+179            </intent-filter>
+180        </service>
+181        <service
+181-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-19:72
+182            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+182-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-107
+183            android:exported="false"
+183-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-37
+184            android:permission="android.permission.BIND_JOB_SERVICE" />
+184-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-69
+185        <service
+185-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:20:9-26:19
+186            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+186-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-97
+187            android:exported="false" >
+187-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-37
+188            <intent-filter>
+188-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:35:13-37:29
+189                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+189-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:36:17-78
+189-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:36:25-75
+190            </intent-filter>
+191        </service>
+192
+193        <receiver
+193-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:28:9-35:20
+194            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+194-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:29:13-98
+195            android:exported="true"
+195-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-36
+196            android:permission="com.google.android.c2dm.permission.SEND" >
+196-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:13-73
+197            <intent-filter>
+197-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-34:29
+198                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+198-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:17-81
+198-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:25-78
+199            </intent-filter>
+200        </receiver>
+201
+202        <service
+202-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:37:9-41:19
+203            android:name="com.google.firebase.components.ComponentDiscoveryService"
+203-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:37:18-89
+204            android:directBootAware="true"
+204-->[com.google.firebase:firebase-common:20.2.0] /private/var/root/.gradle/caches/transforms-3/b079baa88a34031222868358cd00aef4/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:34:13-43
+205            android:exported="false" >
+205-->[com.google.firebase:firebase-firestore:24.4.1] /private/var/root/.gradle/caches/transforms-3/06eb90d5a392a359afb2bf689de04f74/transformed/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:18:13-37
+206            <meta-data
+206-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-40:85
+207                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+207-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:39:17-128
+208                android:value="com.google.firebase.components.ComponentRegistrar" />
+208-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:40:17-82
+209            <meta-data
+209-->[:cloud_firestore] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+210                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+210-->[:cloud_firestore] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-134
+211                android:value="com.google.firebase.components.ComponentRegistrar" />
+211-->[:cloud_firestore] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+212            <meta-data
+212-->[:firebase_core] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+213                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+213-->[:firebase_core] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
+214                android:value="com.google.firebase.components.ComponentRegistrar" />
+214-->[:firebase_core] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+215            <meta-data
+215-->[com.google.firebase:firebase-firestore:24.4.1] /private/var/root/.gradle/caches/transforms-3/06eb90d5a392a359afb2bf689de04f74/transformed/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:19:13-21:85
+216                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+216-->[com.google.firebase:firebase-firestore:24.4.1] /private/var/root/.gradle/caches/transforms-3/06eb90d5a392a359afb2bf689de04f74/transformed/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:20:17-111
+217                android:value="com.google.firebase.components.ComponentRegistrar" />
+217-->[com.google.firebase:firebase-firestore:24.4.1] /private/var/root/.gradle/caches/transforms-3/06eb90d5a392a359afb2bf689de04f74/transformed/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:21:17-82
+218            <meta-data
+218-->[com.google.firebase:firebase-messaging:23.0.8] /private/var/root/.gradle/caches/transforms-3/7e2c38458e5144d10eb9b30fe8e8143e/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:56:13-58:85
+219                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+219-->[com.google.firebase:firebase-messaging:23.0.8] /private/var/root/.gradle/caches/transforms-3/7e2c38458e5144d10eb9b30fe8e8143e/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:57:17-119
+220                android:value="com.google.firebase.components.ComponentRegistrar" />
+220-->[com.google.firebase:firebase-messaging:23.0.8] /private/var/root/.gradle/caches/transforms-3/7e2c38458e5144d10eb9b30fe8e8143e/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:58:17-82
+221            <meta-data
+221-->[com.google.android.gms:play-services-measurement-api:21.2.0] /private/var/root/.gradle/caches/transforms-3/3c52b5206943d770d29abf58e0d43a5e/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:31:13-33:85
+222                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+222-->[com.google.android.gms:play-services-measurement-api:21.2.0] /private/var/root/.gradle/caches/transforms-3/3c52b5206943d770d29abf58e0d43a5e/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:32:17-139
+223                android:value="com.google.firebase.components.ComponentRegistrar" />
+223-->[com.google.android.gms:play-services-measurement-api:21.2.0] /private/var/root/.gradle/caches/transforms-3/3c52b5206943d770d29abf58e0d43a5e/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:33:17-82
+224            <meta-data
+224-->[com.google.firebase:firebase-datatransport:18.1.6] /private/var/root/.gradle/caches/transforms-3/f0fa7b48f9cfda3a2eeb317d672cd0c6/transformed/jetified-firebase-datatransport-18.1.6/AndroidManifest.xml:28:13-30:85
+225                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+225-->[com.google.firebase:firebase-datatransport:18.1.6] /private/var/root/.gradle/caches/transforms-3/f0fa7b48f9cfda3a2eeb317d672cd0c6/transformed/jetified-firebase-datatransport-18.1.6/AndroidManifest.xml:29:17-115
+226                android:value="com.google.firebase.components.ComponentRegistrar" />
+226-->[com.google.firebase:firebase-datatransport:18.1.6] /private/var/root/.gradle/caches/transforms-3/f0fa7b48f9cfda3a2eeb317d672cd0c6/transformed/jetified-firebase-datatransport-18.1.6/AndroidManifest.xml:30:17-82
+227            <meta-data
+227-->[com.google.firebase:firebase-installations:17.0.3] /private/var/root/.gradle/caches/transforms-3/78f947d53a222bc2d1d2ad499b56b2af/transformed/jetified-firebase-installations-17.0.3/AndroidManifest.xml:18:13-20:85
+228                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+228-->[com.google.firebase:firebase-installations:17.0.3] /private/var/root/.gradle/caches/transforms-3/78f947d53a222bc2d1d2ad499b56b2af/transformed/jetified-firebase-installations-17.0.3/AndroidManifest.xml:19:17-127
+229                android:value="com.google.firebase.components.ComponentRegistrar" />
+229-->[com.google.firebase:firebase-installations:17.0.3] /private/var/root/.gradle/caches/transforms-3/78f947d53a222bc2d1d2ad499b56b2af/transformed/jetified-firebase-installations-17.0.3/AndroidManifest.xml:20:17-82
+230        </service>
+231
+232        <provider
+232-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:43:9-47:38
+233            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+233-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:44:13-102
+234            android:authorities="com.GimoMagic.CatLife.flutterfirebasemessaginginitprovider"
+234-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:45:13-88
+235            android:exported="false"
+235-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:46:13-37
+236            android:initOrder="99" />
+236-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:47:13-35
+237
+238        <service
+238-->[:geolocator_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-14:56
+239            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+239-->[:geolocator_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-77
+240            android:enabled="true"
+240-->[:geolocator_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-35
+241            android:exported="false"
+241-->[:geolocator_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+242            android:foregroundServiceType="location" />
+242-->[:geolocator_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-53
+243
+244        <provider
+244-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+245            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+245-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-82
+246            android:authorities="com.GimoMagic.CatLife.flutter.image_provider"
+246-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
+247            android:exported="false"
+247-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+248            android:grantUriPermissions="true" >
+248-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+249            <meta-data
+249-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:75
+250                android:name="android.support.FILE_PROVIDER_PATHS"
+250-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
+251                android:resource="@xml/flutter_image_picker_file_paths" />
+251-->[:image_picker_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-72
+252        </provider>
+253
+254        <receiver
+254-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-17:39
+255            android:name="me.carda.awesome_notifications.DartNotificationActionReceiver"
+255-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-89
+256            android:exported="true" />
+256-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-36
+257        <receiver
+257-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:18:9-20:39
+258            android:name="me.carda.awesome_notifications.DartDismissedNotificationReceiver"
+258-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-92
+259            android:exported="true" />
+259-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-36
+260        <receiver
+260-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:21:9-23:39
+261            android:name="me.carda.awesome_notifications.DartScheduledNotificationReceiver"
+261-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-92
+262            android:exported="true" />
+262-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-36
+263        <receiver
+263-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:24:9-38:20
+264            android:name="me.carda.awesome_notifications.DartRefreshSchedulesReceiver"
+264-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-87
+265            android:enabled="true"
+265-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-35
+266            android:exported="true" >
+266-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-36
+267            <intent-filter>
+267-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-37:29
+268                <category android:name="android.intent.category.DEFAULT" />
+268-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:26:9-68
+268-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:26:19-65
+269
+270                <action android:name="android.intent.action.BOOT_COMPLETED" />
+270-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:25:17-79
+270-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:25:25-76
+271                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+271-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:32:17-86
+271-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:32:25-83
+272                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+272-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:33:17-84
+272-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:33:25-81
+273                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+273-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:34:17-82
+273-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:34:25-79
+274                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+274-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:35:17-82
+274-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:35:25-79
+275                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+275-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:36:17-107
+275-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:36:25-104
+276            </intent-filter>
+277        </receiver>
+278
+279        <service
+279-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:40:9-43:72
+280            android:name="me.carda.awesome_notifications.DartBackgroundService"
+280-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:41:13-80
+281            android:exported="false"
+281-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-37
+282            android:permission="android.permission.BIND_JOB_SERVICE" />
+282-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:43:13-69
+283        <service
+283-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:44:9-49:43
+284            android:name="me.carda.awesome_notifications.core.services.ForegroundService"
+284-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:45:13-90
+285            android:enabled="true"
+285-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:46:13-35
+286            android:exported="false"
+286-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:47:13-37
+287            android:foregroundServiceType="phoneCall"
+287-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:48:13-54
+288            android:stopWithTask="true" />
+288-->[:awesome_notifications] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:49:13-40
+289
+290        <activity
+290-->[:url_launcher_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
+291            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+291-->[:url_launcher_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
+292            android:exported="false"
+292-->[:url_launcher_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+293            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+293-->[:url_launcher_android] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
+294
+295        <service
+295-->[me.carda:fcmandroidcore:0.7.6] /private/var/root/.gradle/caches/transforms-3/f61f97067282ea350c9b6ed94b0b6f55/transformed/jetified-fcmandroidcore-0.7.6/AndroidManifest.xml:10:9-13:72
+296            android:name="me.carda.awesome_notifications_fcm.core.services.FcmSilentService"
+296-->[me.carda:fcmandroidcore:0.7.6] /private/var/root/.gradle/caches/transforms-3/f61f97067282ea350c9b6ed94b0b6f55/transformed/jetified-fcmandroidcore-0.7.6/AndroidManifest.xml:11:13-93
+297            android:exported="false"
+297-->[me.carda:fcmandroidcore:0.7.6] /private/var/root/.gradle/caches/transforms-3/f61f97067282ea350c9b6ed94b0b6f55/transformed/jetified-fcmandroidcore-0.7.6/AndroidManifest.xml:12:13-37
+298            android:permission="android.permission.BIND_JOB_SERVICE" />
+298-->[me.carda:fcmandroidcore:0.7.6] /private/var/root/.gradle/caches/transforms-3/f61f97067282ea350c9b6ed94b0b6f55/transformed/jetified-fcmandroidcore-0.7.6/AndroidManifest.xml:13:13-69
+299
+300        <receiver
+300-->[com.google.firebase:firebase-messaging:23.0.8] /private/var/root/.gradle/caches/transforms-3/7e2c38458e5144d10eb9b30fe8e8143e/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:32:9-39:20
+301            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+301-->[com.google.firebase:firebase-messaging:23.0.8] /private/var/root/.gradle/caches/transforms-3/7e2c38458e5144d10eb9b30fe8e8143e/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:33:13-78
+302            android:exported="true"
+302-->[com.google.firebase:firebase-messaging:23.0.8] /private/var/root/.gradle/caches/transforms-3/7e2c38458e5144d10eb9b30fe8e8143e/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:34:13-36
+303            android:permission="com.google.android.c2dm.permission.SEND" >
+303-->[com.google.firebase:firebase-messaging:23.0.8] /private/var/root/.gradle/caches/transforms-3/7e2c38458e5144d10eb9b30fe8e8143e/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:35:13-73
+304            <intent-filter>
+304-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-34:29
+305                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+305-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:17-81
+305-->[:firebase_messaging] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:25-78
+306            </intent-filter>
+307        </receiver>
+308        <!--
+309             FirebaseMessagingService performs security checks at runtime,
+310             but set to not exported to explicitly avoid allowing another app to call it.
+311        -->
+312        <service
+312-->[com.google.firebase:firebase-messaging:23.0.8] /private/var/root/.gradle/caches/transforms-3/7e2c38458e5144d10eb9b30fe8e8143e/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:45:9-52:19
+313            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+313-->[com.google.firebase:firebase-messaging:23.0.8] /private/var/root/.gradle/caches/transforms-3/7e2c38458e5144d10eb9b30fe8e8143e/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:46:13-82
+314            android:directBootAware="true"
+314-->[com.google.firebase:firebase-messaging:23.0.8] /private/var/root/.gradle/caches/transforms-3/7e2c38458e5144d10eb9b30fe8e8143e/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:47:13-43
+315            android:exported="false" >
+315-->[com.google.firebase:firebase-messaging:23.0.8] /private/var/root/.gradle/caches/transforms-3/7e2c38458e5144d10eb9b30fe8e8143e/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:48:13-37
+316            <intent-filter android:priority="-500" >
+316-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:35:13-37:29
+317                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+317-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:36:17-78
+317-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:36:25-75
+318            </intent-filter>
+319        </service> <!-- Needs to be explicitly declared on P+ -->
+320        <uses-library
+320-->[com.google.android.gms:play-services-maps:18.2.0] /private/var/root/.gradle/caches/transforms-3/85f4e7c955e87f510a2fc66c74777171/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
+321            android:name="org.apache.http.legacy"
+321-->[com.google.android.gms:play-services-maps:18.2.0] /private/var/root/.gradle/caches/transforms-3/85f4e7c955e87f510a2fc66c74777171/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:40:13-50
+322            android:required="false" />
+322-->[com.google.android.gms:play-services-maps:18.2.0] /private/var/root/.gradle/caches/transforms-3/85f4e7c955e87f510a2fc66c74777171/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:41:13-37
+323
+324        <activity
+324-->[com.google.android.gms:play-services-auth:20.4.1] /private/var/root/.gradle/caches/transforms-3/6f9bf94919f57b53496cd903ac5c226e/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:23:9-27:75
+325            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+325-->[com.google.android.gms:play-services-auth:20.4.1] /private/var/root/.gradle/caches/transforms-3/6f9bf94919f57b53496cd903ac5c226e/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:24:13-93
+326            android:excludeFromRecents="true"
+326-->[com.google.android.gms:play-services-auth:20.4.1] /private/var/root/.gradle/caches/transforms-3/6f9bf94919f57b53496cd903ac5c226e/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:25:13-46
+327            android:exported="false"
+327-->[com.google.android.gms:play-services-auth:20.4.1] /private/var/root/.gradle/caches/transforms-3/6f9bf94919f57b53496cd903ac5c226e/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:26:13-37
+328            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+328-->[com.google.android.gms:play-services-auth:20.4.1] /private/var/root/.gradle/caches/transforms-3/6f9bf94919f57b53496cd903ac5c226e/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:27:13-72
+329        <!--
+330            Service handling Google Sign-In user revocation. For apps that do not integrate with
+331            Google Sign-In, this service will never be started.
+332        -->
+333        <service
+333-->[com.google.android.gms:play-services-auth:20.4.1] /private/var/root/.gradle/caches/transforms-3/6f9bf94919f57b53496cd903ac5c226e/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:33:9-37:51
+334            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+334-->[com.google.android.gms:play-services-auth:20.4.1] /private/var/root/.gradle/caches/transforms-3/6f9bf94919f57b53496cd903ac5c226e/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:34:13-89
+335            android:exported="true"
+335-->[com.google.android.gms:play-services-auth:20.4.1] /private/var/root/.gradle/caches/transforms-3/6f9bf94919f57b53496cd903ac5c226e/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:35:13-36
+336            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+336-->[com.google.android.gms:play-services-auth:20.4.1] /private/var/root/.gradle/caches/transforms-3/6f9bf94919f57b53496cd903ac5c226e/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:36:13-107
+337            android:visibleToInstantApps="true" />
+337-->[com.google.android.gms:play-services-auth:20.4.1] /private/var/root/.gradle/caches/transforms-3/6f9bf94919f57b53496cd903ac5c226e/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:37:13-48
+338        <service
+338-->[com.google.android.gms:play-services-mlkit-text-recognition-common:17.1.0] /private/var/root/.gradle/caches/transforms-3/9ff9a709d7a65973aeee52ee8e1156f1/transformed/jetified-play-services-mlkit-text-recognition-common-17.1.0/AndroidManifest.xml:9:9-15:19
+339            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+339-->[com.google.android.gms:play-services-mlkit-text-recognition-common:17.1.0] /private/var/root/.gradle/caches/transforms-3/9ff9a709d7a65973aeee52ee8e1156f1/transformed/jetified-play-services-mlkit-text-recognition-common-17.1.0/AndroidManifest.xml:10:13-91
+340            android:directBootAware="true"
+340-->[com.google.mlkit:common:18.5.0] /private/var/root/.gradle/caches/transforms-3/19951666810ac7c5124851f43b59e202/transformed/jetified-common-18.5.0/AndroidManifest.xml:17:13-43
+341            android:exported="false" >
+341-->[com.google.android.gms:play-services-mlkit-text-recognition-common:17.1.0] /private/var/root/.gradle/caches/transforms-3/9ff9a709d7a65973aeee52ee8e1156f1/transformed/jetified-play-services-mlkit-text-recognition-common-17.1.0/AndroidManifest.xml:11:13-37
+342            <meta-data
+342-->[com.google.android.gms:play-services-mlkit-text-recognition-common:17.1.0] /private/var/root/.gradle/caches/transforms-3/9ff9a709d7a65973aeee52ee8e1156f1/transformed/jetified-play-services-mlkit-text-recognition-common-17.1.0/AndroidManifest.xml:12:13-14:85
+343                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+343-->[com.google.android.gms:play-services-mlkit-text-recognition-common:17.1.0] /private/var/root/.gradle/caches/transforms-3/9ff9a709d7a65973aeee52ee8e1156f1/transformed/jetified-play-services-mlkit-text-recognition-common-17.1.0/AndroidManifest.xml:13:17-114
+344                android:value="com.google.firebase.components.ComponentRegistrar" />
+344-->[com.google.android.gms:play-services-mlkit-text-recognition-common:17.1.0] /private/var/root/.gradle/caches/transforms-3/9ff9a709d7a65973aeee52ee8e1156f1/transformed/jetified-play-services-mlkit-text-recognition-common-17.1.0/AndroidManifest.xml:14:17-82
+345            <meta-data
+345-->[com.google.mlkit:vision-common:17.2.0] /private/var/root/.gradle/caches/transforms-3/bcca74b143a109c0cc91fbc0710892f5/transformed/jetified-vision-common-17.2.0/AndroidManifest.xml:12:13-14:85
+346                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+346-->[com.google.mlkit:vision-common:17.2.0] /private/var/root/.gradle/caches/transforms-3/bcca74b143a109c0cc91fbc0710892f5/transformed/jetified-vision-common-17.2.0/AndroidManifest.xml:13:17-124
+347                android:value="com.google.firebase.components.ComponentRegistrar" />
+347-->[com.google.mlkit:vision-common:17.2.0] /private/var/root/.gradle/caches/transforms-3/bcca74b143a109c0cc91fbc0710892f5/transformed/jetified-vision-common-17.2.0/AndroidManifest.xml:14:17-82
+348            <meta-data
+348-->[com.google.mlkit:common:18.5.0] /private/var/root/.gradle/caches/transforms-3/19951666810ac7c5124851f43b59e202/transformed/jetified-common-18.5.0/AndroidManifest.xml:20:13-22:85
+349                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+349-->[com.google.mlkit:common:18.5.0] /private/var/root/.gradle/caches/transforms-3/19951666810ac7c5124851f43b59e202/transformed/jetified-common-18.5.0/AndroidManifest.xml:21:17-120
+350                android:value="com.google.firebase.components.ComponentRegistrar" />
+350-->[com.google.mlkit:common:18.5.0] /private/var/root/.gradle/caches/transforms-3/19951666810ac7c5124851f43b59e202/transformed/jetified-common-18.5.0/AndroidManifest.xml:22:17-82
+351        </service>
+352
+353        <provider
+353-->[com.google.mlkit:common:18.5.0] /private/var/root/.gradle/caches/transforms-3/19951666810ac7c5124851f43b59e202/transformed/jetified-common-18.5.0/AndroidManifest.xml:9:9-13:38
+354            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+354-->[com.google.mlkit:common:18.5.0] /private/var/root/.gradle/caches/transforms-3/19951666810ac7c5124851f43b59e202/transformed/jetified-common-18.5.0/AndroidManifest.xml:10:13-78
+355            android:authorities="com.GimoMagic.CatLife.mlkitinitprovider"
+355-->[com.google.mlkit:common:18.5.0] /private/var/root/.gradle/caches/transforms-3/19951666810ac7c5124851f43b59e202/transformed/jetified-common-18.5.0/AndroidManifest.xml:11:13-69
+356            android:exported="false"
+356-->[com.google.mlkit:common:18.5.0] /private/var/root/.gradle/caches/transforms-3/19951666810ac7c5124851f43b59e202/transformed/jetified-common-18.5.0/AndroidManifest.xml:12:13-37
+357            android:initOrder="99" />
+357-->[com.google.mlkit:common:18.5.0] /private/var/root/.gradle/caches/transforms-3/19951666810ac7c5124851f43b59e202/transformed/jetified-common-18.5.0/AndroidManifest.xml:13:13-35
+358
+359        <activity
+359-->[com.google.android.gms:play-services-base:18.1.0] /private/var/root/.gradle/caches/transforms-3/845f9610acde04333f5d79dad9a6380a/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+360            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+360-->[com.google.android.gms:play-services-base:18.1.0] /private/var/root/.gradle/caches/transforms-3/845f9610acde04333f5d79dad9a6380a/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+361            android:exported="false"
+361-->[com.google.android.gms:play-services-base:18.1.0] /private/var/root/.gradle/caches/transforms-3/845f9610acde04333f5d79dad9a6380a/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+362            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+362-->[com.google.android.gms:play-services-base:18.1.0] /private/var/root/.gradle/caches/transforms-3/845f9610acde04333f5d79dad9a6380a/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+363
+364        <receiver
+364-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:29:9-33:20
+365            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+365-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:30:13-85
+366            android:enabled="true"
+366-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:31:13-35
+367            android:exported="false" >
+367-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:32:13-37
+368        </receiver>
+369
+370        <service
+370-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:35:9-38:40
+371            android:name="com.google.android.gms.measurement.AppMeasurementService"
+371-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:36:13-84
+372            android:enabled="true"
+372-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:37:13-35
+373            android:exported="false" />
+373-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:38:13-37
+374        <service
+374-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:39:9-43:72
+375            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+375-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:40:13-87
+376            android:enabled="true"
+376-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:41:13-35
+377            android:exported="false"
+377-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:42:13-37
+378            android:permission="android.permission.BIND_JOB_SERVICE" />
+378-->[com.google.android.gms:play-services-measurement:21.2.0] /private/var/root/.gradle/caches/transforms-3/4df7dc2fabe8b7e6720edd13a0fbd359/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:43:13-69
+379
+380        <provider
+380-->[com.google.firebase:firebase-common:20.2.0] /private/var/root/.gradle/caches/transforms-3/b079baa88a34031222868358cd00aef4/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
+381            android:name="com.google.firebase.provider.FirebaseInitProvider"
+381-->[com.google.firebase:firebase-common:20.2.0] /private/var/root/.gradle/caches/transforms-3/b079baa88a34031222868358cd00aef4/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:26:13-77
+382            android:authorities="com.GimoMagic.CatLife.firebaseinitprovider"
+382-->[com.google.firebase:firebase-common:20.2.0] /private/var/root/.gradle/caches/transforms-3/b079baa88a34031222868358cd00aef4/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:27:13-72
+383            android:directBootAware="true"
+383-->[com.google.firebase:firebase-common:20.2.0] /private/var/root/.gradle/caches/transforms-3/b079baa88a34031222868358cd00aef4/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:28:13-43
+384            android:exported="false"
+384-->[com.google.firebase:firebase-common:20.2.0] /private/var/root/.gradle/caches/transforms-3/b079baa88a34031222868358cd00aef4/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:29:13-37
+385            android:initOrder="100" />
+385-->[com.google.firebase:firebase-common:20.2.0] /private/var/root/.gradle/caches/transforms-3/b079baa88a34031222868358cd00aef4/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:30:13-36
+386
+387        <meta-data
+387-->[com.google.android.gms:play-services-basement:18.1.0] /private/var/root/.gradle/caches/transforms-3/613aed6e063b1a3e06a392156b8b0fb8/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+388            android:name="com.google.android.gms.version"
+388-->[com.google.android.gms:play-services-basement:18.1.0] /private/var/root/.gradle/caches/transforms-3/613aed6e063b1a3e06a392156b8b0fb8/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+389            android:value="@integer/google_play_services_version" />
+389-->[com.google.android.gms:play-services-basement:18.1.0] /private/var/root/.gradle/caches/transforms-3/613aed6e063b1a3e06a392156b8b0fb8/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+390
+391        <uses-library
+391-->[androidx.window:window:1.0.0-beta04] /private/var/root/.gradle/caches/transforms-3/91e974a7bd86f1ab2519fec095795aa3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+392            android:name="androidx.window.extensions"
+392-->[androidx.window:window:1.0.0-beta04] /private/var/root/.gradle/caches/transforms-3/91e974a7bd86f1ab2519fec095795aa3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+393            android:required="false" />
+393-->[androidx.window:window:1.0.0-beta04] /private/var/root/.gradle/caches/transforms-3/91e974a7bd86f1ab2519fec095795aa3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+394        <uses-library
+394-->[androidx.window:window:1.0.0-beta04] /private/var/root/.gradle/caches/transforms-3/91e974a7bd86f1ab2519fec095795aa3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+395            android:name="androidx.window.sidecar"
+395-->[androidx.window:window:1.0.0-beta04] /private/var/root/.gradle/caches/transforms-3/91e974a7bd86f1ab2519fec095795aa3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+396            android:required="false" />
+396-->[androidx.window:window:1.0.0-beta04] /private/var/root/.gradle/caches/transforms-3/91e974a7bd86f1ab2519fec095795aa3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+397
+398        <service
+398-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /private/var/root/.gradle/caches/transforms-3/31e7f14f3f9a3c05ee918ee24de0c8bf/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:29:9-35:19
+399            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+399-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /private/var/root/.gradle/caches/transforms-3/31e7f14f3f9a3c05ee918ee24de0c8bf/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:30:13-103
+400            android:exported="false" >
+400-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /private/var/root/.gradle/caches/transforms-3/31e7f14f3f9a3c05ee918ee24de0c8bf/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:31:13-37
+401            <meta-data
+401-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /private/var/root/.gradle/caches/transforms-3/31e7f14f3f9a3c05ee918ee24de0c8bf/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:32:13-34:39
+402                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+402-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /private/var/root/.gradle/caches/transforms-3/31e7f14f3f9a3c05ee918ee24de0c8bf/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:33:17-94
+403                android:value="cct" />
+403-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /private/var/root/.gradle/caches/transforms-3/31e7f14f3f9a3c05ee918ee24de0c8bf/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:34:17-36
+404        </service>
+405        <service
+405-->[com.google.android.datatransport:transport-runtime:3.1.7] /private/var/root/.gradle/caches/transforms-3/0760b155973c86feefba9fda5980b2d1/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:26:9-30:19
+406            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+406-->[com.google.android.datatransport:transport-runtime:3.1.7] /private/var/root/.gradle/caches/transforms-3/0760b155973c86feefba9fda5980b2d1/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:27:13-117
+407            android:exported="false"
+407-->[com.google.android.datatransport:transport-runtime:3.1.7] /private/var/root/.gradle/caches/transforms-3/0760b155973c86feefba9fda5980b2d1/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:28:13-37
+408            android:permission="android.permission.BIND_JOB_SERVICE" >
+408-->[com.google.android.datatransport:transport-runtime:3.1.7] /private/var/root/.gradle/caches/transforms-3/0760b155973c86feefba9fda5980b2d1/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:29:13-69
+409        </service>
+410
+411        <receiver
+411-->[com.google.android.datatransport:transport-runtime:3.1.7] /private/var/root/.gradle/caches/transforms-3/0760b155973c86feefba9fda5980b2d1/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:32:9-34:40
+412            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+412-->[com.google.android.datatransport:transport-runtime:3.1.7] /private/var/root/.gradle/caches/transforms-3/0760b155973c86feefba9fda5980b2d1/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:33:13-132
+413            android:exported="false" />
+413-->[com.google.android.datatransport:transport-runtime:3.1.7] /private/var/root/.gradle/caches/transforms-3/0760b155973c86feefba9fda5980b2d1/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:34:13-37
+414
+415        <provider
+415-->[androidx.emoji2:emoji2:1.2.0] /private/var/root/.gradle/caches/transforms-3/8df77229f4001ad54fc60c68ab4f63ae/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+416            android:name="androidx.startup.InitializationProvider"
+416-->[androidx.emoji2:emoji2:1.2.0] /private/var/root/.gradle/caches/transforms-3/8df77229f4001ad54fc60c68ab4f63ae/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+417            android:authorities="com.GimoMagic.CatLife.androidx-startup"
+417-->[androidx.emoji2:emoji2:1.2.0] /private/var/root/.gradle/caches/transforms-3/8df77229f4001ad54fc60c68ab4f63ae/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+418            android:exported="false" >
+418-->[androidx.emoji2:emoji2:1.2.0] /private/var/root/.gradle/caches/transforms-3/8df77229f4001ad54fc60c68ab4f63ae/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+419            <meta-data
+419-->[androidx.emoji2:emoji2:1.2.0] /private/var/root/.gradle/caches/transforms-3/8df77229f4001ad54fc60c68ab4f63ae/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+420                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+420-->[androidx.emoji2:emoji2:1.2.0] /private/var/root/.gradle/caches/transforms-3/8df77229f4001ad54fc60c68ab4f63ae/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+421                android:value="androidx.startup" />
+421-->[androidx.emoji2:emoji2:1.2.0] /private/var/root/.gradle/caches/transforms-3/8df77229f4001ad54fc60c68ab4f63ae/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+422            <meta-data
+422-->[androidx.lifecycle:lifecycle-process:2.5.1] /private/var/root/.gradle/caches/transforms-3/5233ad17c5d1da87cc99d61e8bd77c77/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:31:13-33:52
+423                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+423-->[androidx.lifecycle:lifecycle-process:2.5.1] /private/var/root/.gradle/caches/transforms-3/5233ad17c5d1da87cc99d61e8bd77c77/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:32:17-78
+424                android:value="androidx.startup" />
+424-->[androidx.lifecycle:lifecycle-process:2.5.1] /private/var/root/.gradle/caches/transforms-3/5233ad17c5d1da87cc99d61e8bd77c77/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:33:17-49
+425        </provider>
+426    </application>
+427
+428</manifest>
