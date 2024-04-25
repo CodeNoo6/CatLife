@@ -206,7 +206,7 @@
 85-->[me.leolin:ShortcutBadger:1.1.22] /private/var/root/.gradle/caches/transforms-3/affad3e74d6d1008f8b1bc7646761b6e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
 86
 87    <application
-87-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:6:3-40:17
+87-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:6:3-44:17
 88        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 88-->[androidx.core:core:1.10.1] /private/var/root/.gradle/caches/transforms-3/c6a5c87688fbc2db4efc38c4557e4771/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
 89        android:extractNativeLibs="false"
@@ -302,33 +302,33 @@
 141        </activity>
 142
 143        <meta-data
-143-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:33:5-35:31
-144            android:name="firebase_analytics_collection_enabled"
-144-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:34:7-59
+143-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:33:5-36:41
+144            android:name="firebase_messaging_auto_init_enabled"
+144-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:34:9-60
 145            android:value="false" />
-145-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:35:7-28
-146        <!--
-147         Don't delete the meta-data below.
-148             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-149        -->
-150        <meta-data
-150-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:38:5-68
-151            android:name="flutterEmbedding"
-151-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:38:16-47
-152            android:value="2" />
-152-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:38:48-65
+145-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:35:9-30
+146        <meta-data
+146-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:37:5-39:31
+147            android:name="firebase_analytics_collection_enabled"
+147-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:38:7-59
+148            android:value="false" />
+148-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:39:7-28
+149        <!--
+150         Don't delete the meta-data below.
+151             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+152        -->
 153        <meta-data
-153-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:39:5-120
-154            android:name="com.google.android.geo.API_KEY"
-154-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:39:16-61
-155            android:value="AIzaSyDBSLtAFqzfVi3X65FDL_9xI9E29a5ZSRs" />
-155-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:39:62-117
+153-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:42:5-68
+154            android:name="flutterEmbedding"
+154-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:42:16-47
+155            android:value="2" />
+155-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:42:48-65
 156        <meta-data
-156-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-16:36
-157            android:name="firebase_messaging_auto_init_enabled"
-157-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-64
-158            android:value="true" />
-158-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-33
+156-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:43:5-120
+157            android:name="com.google.android.geo.API_KEY"
+157-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:43:16-61
+158            android:value="AIzaSyDBSLtAFqzfVi3X65FDL_9xI9E29a5ZSRs" />
+158-->/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/AndroidManifest.xml:43:62-117
 159        <meta-data
 159-->[:awesome_notifications_fcm] /Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/awesome_notifications_fcm/intermediates/merged_manifest/release/AndroidManifest.xml:17:9-19:36
 160            android:name="delivery_metrics_exported_to_big_query_enabled"
