@@ -126,8 +126,7 @@ class _PetDetailState extends State<PetDetail> {
         ),
         actions: [
           Padding(
-            padding: const EdgeInsets.only(
-                right: 8.0), // Ajusta el espaciado según sea necesario
+            padding: const EdgeInsets.all(7.0),
             child: Container(
               padding: EdgeInsets.all(1),
               decoration: BoxDecoration(

@@ -33,7 +33,7 @@ class _GuestStartPageState extends State<GuestStartPage> {
           },
         ),
         title: Text(
-          'Lo sentimos',
+          'Ingresa Ahora',
           style: GoogleFonts.aBeeZee(
             textStyle: TextStyle(
               fontWeight: FontWeight.bold,

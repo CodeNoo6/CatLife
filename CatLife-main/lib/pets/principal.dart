@@ -87,7 +87,15 @@ class _PrincipalState extends State<Principal> {
             },
             icon: Icon(Icons.pets),
             backgroundColor: HexColor("EC6337"), // Color del botón
-            label: Text("Nuevo Felino"),
+            label: Text(
+              "Nuevo Felino",
+              style: GoogleFonts.aBeeZee(
+                textStyle: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+            ),
           ),
           body: SingleChildScrollView(
             physics: BouncingScrollPhysics(),

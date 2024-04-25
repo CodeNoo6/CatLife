@@ -11,4 +11,15 @@ class Utilities {
     String correo = pref.getString('correo');
     return correo;
   }
+
+  static Future<void> guardaTips(correo) async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    await pref.setString('tips', correo);
+  }
+
+  static Future<String> obtenerTips() async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    String correo = pref.getString('tips');
+    return correo;
+  }
 }

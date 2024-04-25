@@ -1,7 +1,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.GimoMagic.CatLife">
-    <!-- Flutter needs it to communicate with the running application
-         to allow setting breakpoints, to provide hot reload, etc.
-    -->
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Agrega cualquier otra declaración de permisos u otras configuraciones necesarias aquí -->
+
+    <application>
+        <!-- Agrega cualquier otro elemento de la aplicación aquí -->
+
+        <!-- Agrega el atributo tools:replace al elemento meta-data -->
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false"
+            tools:replace="android:value" />
+    </application>
 </manifest>

@@ -1,11 +1,13 @@
 import 'dart:convert';
 
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:catage/Modelo/Fundacion.dart';
 import 'package:catage/Modelo/GatoxFundacion.dart';
 import 'package:catage/NewApp/LocateDoctorPage.dart';
 import 'package:catage/NewApp/UtilitiePage.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:convert';
-import 'dart:math' show cos, sqrt, asin;
+import 'dart:math' show Random, asin, cos, sqrt;
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:http/http.dart' as http;
@@ -30,9 +32,13 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:icofont_flutter/icofont_flutter.dart';
 
 import '../Database/Database.dart';
+import '../Messages/Dialogs.dart';
+import '../Messages/widgets/buttons/icon_button.dart';
+import '../Messages/widgets/buttons/icon_outline_button.dart';
 import '../Modelo/Gato.dart';
 import '../Modelo/GatoxPropietario.dart';
 import '../Modelo/Propietario.dart';
+import '../Utilities/Utilities.dart';
 import '../pets/pet_widget.dart';
 import 'AdoptionPage.dart';
 import 'AllVacinesPets.dart';
@@ -49,7 +55,6 @@ class MenuPage extends StatefulWidget {
 class _MenuPageState extends State<MenuPage> {
   List<GatoxFundacion> gatosxFundaciones = new List();
   bool hayNotificaciones = false;
-  String propietario;
   bool _loading = false;
   bool newPet = false;
   double latitude;
@@ -98,6 +103,279 @@ class _MenuPageState extends State<MenuPage> {
     }
   }
 
+  Future<List<Map<String, dynamic>>> getTipsFromFirestore() async {
+    List<Map<String, dynamic>> tips = [];
+
+    try {
+      QuerySnapshot querySnapshot =
+          await FirebaseFirestore.instance.collection('tips').get();
+
+      querySnapshot.docs.forEach((doc) {
+        tips.add({
+          'title': doc['title'],
+          'message': doc['message'],
+        });
+      });
+
+      return tips;
+    } catch (e) {
+      print('Error al obtener los tips desde Firestore: $e');
+      return [];
+    }
+  }
+
+  void insertTipsData() async {
+    try {
+      // Accede a la instancia de Firestore
+      FirebaseFirestore firestore = FirebaseFirestore.instance;
+
+      // Datos de los tips
+      List<Map<String, dynamic>> tips = [
+        {
+          'title': 'Tip 1',
+          'message':
+              '¡Los gatos pueden tener hasta 5 dedos en las patitas delanteras, pero solo 4 en las traseras! 🐾'
+        }
+      ];
+
+      // Inserta cada tip en Firestore
+      for (var tip in tips) {
+        await firestore.collection('tips').add(tip);
+      }
+
+      print('Datos de los tips insertados correctamente en Firestore.');
+    } catch (e) {
+      print('Error al insertar los datos de los tips: $e');
+    }
+  }
+
+// Lista para almacenar los índices de los tips ya mostrados
+  List<int> shownTipIndexes = [];
+
+// Método para obtener un índice aleatorio no mostrado previamente
+  int getRandomIndex(List<Map<String, dynamic>> tips) {
+    List<int> availableIndexes = [];
+
+    // Agregar índices no mostrados a la lista de disponibles
+    for (int i = 0; i < tips.length; i++) {
+      if (!shownTipIndexes.contains(i)) {
+        availableIndexes.add(i);
+      }
+    }
+
+    if (availableIndexes.isEmpty) {
+      // Todos los tips han sido mostrados, reiniciar la lista
+      shownTipIndexes.clear();
+      availableIndexes = List.generate(tips.length, (index) => index);
+    }
+
+    // Obtener un índice aleatorio de la lista de disponibles
+    int randomIndex =
+        availableIndexes[Random().nextInt(availableIndexes.length)];
+
+    // Registrar el índice mostrado
+    shownTipIndexes.add(randomIndex);
+
+    return randomIndex;
+  }
+
+  Future<List<Map<String, dynamic>>> getLimitedTipsFromFirestore(
+      int limit) async {
+    List<Map<String, dynamic>> tips = [];
+
+    try {
+      // Accede a la instancia de Firestore
+      FirebaseFirestore firestore = FirebaseFirestore.instance;
+
+      // Obtiene todos los documentos de la colección 'tips'
+      QuerySnapshot allDocsSnapshot = await firestore.collection('tips').get();
+
+      // Obtén la lista de todos los documentos
+      List<DocumentSnapshot> allDocs = allDocsSnapshot.docs;
+
+      // Verifica si hay suficientes documentos para cumplir con el límite solicitado
+      if (allDocs.length < limit) {
+        throw Exception('No hay suficientes documentos en la colección.');
+      }
+
+      // Selecciona aleatoriamente 'limit' documentos
+      List<DocumentSnapshot> randomDocs = [];
+      final random = Random();
+      while (randomDocs.length < limit) {
+        // Selecciona un índice aleatorio dentro del rango de todos los documentos
+        int randomIndex = random.nextInt(allDocs.length);
+        // Agrega el documento correspondiente al índice aleatorio a la lista de documentos aleatorios
+        randomDocs.add(allDocs[randomIndex]);
+        // Elimina el documento seleccionado para evitar la selección duplicada
+        allDocs.removeAt(randomIndex);
+      }
+
+      // Recorre los documentos seleccionados y agrega sus datos a la lista de tips
+      randomDocs.forEach((doc) {
+        Map<String, dynamic> tipData = doc.data();
+        tips.add(tipData);
+      });
+
+      return tips;
+    } catch (e) {
+      print('Error al obtener los tips desde Firestore: $e');
+      return [];
+    }
+  }
+
+  void showRandomTipDialog() async {
+    int limit = 3;
+    List<Map<String, dynamic>> tips = await getLimitedTipsFromFirestore(limit);
+
+    if (tips.isEmpty) {
+      print('No se encontraron tips en Firestore.');
+      return;
+    }
+
+    int currentTipIndex = getRandomIndex(tips);
+
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(20))),
+          title: Text("", textAlign: TextAlign.center),
+          content: StatefulBuilder(
+            builder: (BuildContext context, setState) {
+              return SizedBox(
+                width: MediaQuery.of(context).size.width * 0.8,
+                height: MediaQuery.of(context).size.height * 0.5,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Expanded(
+                      child: PageView.builder(
+                        itemCount: tips.length,
+                        onPageChanged: (index) {
+                          setState(() {
+                            currentTipIndex = index;
+                          });
+                        },
+                        itemBuilder: (context, index) {
+                          return Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Container(
+                                    padding: EdgeInsets.fromLTRB(10, 10, 2, 30),
+                                    child: CircleAvatar(
+                                      backgroundColor: Colors.white70,
+                                      radius: 35,
+                                      child: CircleAvatar(
+                                        radius: 30,
+                                        child: CircleAvatar(
+                                          backgroundImage:
+                                              AssetImage('images/logo.png'),
+                                          radius: 30,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Container(
+                                    width: 150,
+                                    padding: EdgeInsets.all(3),
+                                    child: Column(
+                                      children: [
+                                        BubbleSpecialOne(
+                                          text: 'Tips del día',
+                                          isSender: false,
+                                          color: HexColor("08CAF7"),
+                                          textStyle: GoogleFonts.aBeeZee(
+                                            textStyle: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 15,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Text(
+                                tips[index]['message'],
+                                textAlign: TextAlign.center,
+                                style: GoogleFonts.aBeeZee(
+                                  textStyle: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey[850],
+                                    fontSize: 20,
+                                  ),
+                                ), // Tamaño de fuente ajustado a 18
+                              ),
+                            ],
+                          );
+                        },
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: List.generate(
+                        tips.length,
+                        (index) => Container(
+                          margin: EdgeInsets.symmetric(horizontal: 5),
+                          width: 10,
+                          height: 10,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: currentTipIndex == index
+                                ? Colors.blue // Resalta el indicador actual
+                                : Colors.grey,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
+          actions: <Widget>[
+            Center(
+              child: Container(
+                width: MediaQuery.of(context).size.width * 0.7,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.grey[200], // Color de fondo del botón Cancelar
+                ),
+                child: TextButton(
+                  onPressed: () async {
+                    await Utilities.guardaTips("Ok");
+                    Navigator.of(context).pop();
+                  },
+                  child: Text(
+                    "¡Ok!",
+                    style: GoogleFonts.aBeeZee(
+                      textStyle: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            )
+          ],
+        );
+      },
+    );
+  }
+
+  int currentTipIndex = 0;
+
   @override
   void initState() {
     super.initState();
@@ -106,7 +384,107 @@ class _MenuPageState extends State<MenuPage> {
     });
   }
 
+  void showTipDialog() async {
+    List<Map<String, dynamic>> tips = await getTipsFromFirestore();
+
+    if (tips.isEmpty) {
+      print('No se encontraron tips en Firestore.');
+      return;
+    }
+
+    int currentTipIndex = 0;
+
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text("Curiosidades", textAlign: TextAlign.center),
+          content: StatefulBuilder(
+            builder: (BuildContext context, setState) {
+              return SizedBox(
+                width: MediaQuery.of(context).size.width * 0.8,
+                height: MediaQuery.of(context).size.height * 0.5,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Expanded(
+                      child: PageView.builder(
+                        itemCount: tips.length,
+                        onPageChanged: (index) {
+                          setState(() {
+                            currentTipIndex = index;
+                          });
+                        },
+                        itemBuilder: (context, index) {
+                          return Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                tips[index]['message'],
+                                textAlign: TextAlign.center,
+                              ),
+                            ],
+                          );
+                        },
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: List.generate(
+                        tips.length,
+                        (index) => Container(
+                          margin: EdgeInsets.symmetric(horizontal: 5),
+                          width: 10,
+                          height: 10,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: currentTipIndex == index
+                                ? Colors.blue // Resalta el indicador actual
+                                : Colors.grey,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
+          actions: <Widget>[
+            Center(
+              // Añade Center para centrar el botón Cancelar
+              child: Container(
+                width: MediaQuery.of(context).size.width * 0.7,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.grey[200], // Color de fondo del botón Cancelar
+                ),
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: Text(
+                    "Cancelar",
+                    style: TextStyle(fontSize: 16),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   void _initializeState() async {
+    //await insertTipsData();
+    String tips = await Utilities.obtenerTips();
+    if (tips == "") {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        showRandomTipDialog();
+      });
+    }
     _loading = true;
     await _getCurrentLocationAndCenterMap();
     getFundaciones();
@@ -248,121 +626,177 @@ class _MenuPageState extends State<MenuPage> {
               ),
             ),
           ),
-          /*leading: Stack(
-            children: [
-              IconButton(
-                icon: Icon(
-                  Icons.notifications,
-                  color: Colors.grey[900],
-                ),
-                onPressed: () {
-                  // Acción al presionar el icono de notificación
-                },
-              ),
-              if (hayNotificaciones)
-                Positioned(
-                  top: 10,
-                  right: 15,
-                  child: Container(
-                    padding: EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.red,
-                    ),
-                  ),
-                ),
-            ],
-          ),*/
-          actions: [
-            Row(
-              children: [
-                SizedBox(width: 20),
-                /*CircleAvatar(
-                  radius: 20,
-                  backgroundColor: Colors.transparent,
-                  backgroundImage:
-                      MemoryImage(base64Decode(widget.objPropietario.foto)),
-                ),*/
-                SizedBox(width: 20), // Espacio después del CircleAvatar
-              ],
-            ),
-          ],
         ),
         body: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                padding: EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  color: HexColor("08CAF7"),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Row(
-                  children: [
-                    Column(
-                      children: [
-                        Text(
-                          '¿Tu gato enfermó?',
-                          style: GoogleFonts.aBeeZee(
-                            textStyle: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                              fontSize: 18,
-                            ),
-                          ),
+              Column(
+                children: [
+                  CarouselSlider(
+                    items: [
+                      Container(
+                        margin:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                        padding: EdgeInsets.all(20),
+                        decoration: BoxDecoration(
+                          color: HexColor("08CAF7"),
+                          borderRadius: BorderRadius.circular(10),
                         ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        GestureDetector(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (BuildContext context) =>
-                                    LocateDoctorPage(),
-                              ),
-                            );
-                          },
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: HexColor("EC6337"),
-                                borderRadius: BorderRadius.circular(10)),
-                            padding: EdgeInsets.all(6),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
+                        child: Row(
+                          children: [
+                            Column(
                               children: [
                                 Text(
-                                  " Ubicar médico",
+                                  '¿Tu gato enfermó?',
                                   style: GoogleFonts.aBeeZee(
                                     textStyle: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.white,
+                                      fontSize: 18,
                                     ),
                                   ),
                                 ),
-                                const SizedBox(width: 10),
-                                Icon(
-                                  Icons.arrow_forward,
-                                  color: Colors.white,
+                                SizedBox(
+                                  height: 20,
+                                ),
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            LocateDoctorPage(),
+                                      ),
+                                    );
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        color: HexColor("EC6337"),
+                                        borderRadius:
+                                            BorderRadius.circular(10)),
+                                    padding: EdgeInsets.all(6),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          " Ubicar médico",
+                                          style: GoogleFonts.aBeeZee(
+                                            textStyle: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
+                                        const SizedBox(width: 10),
+                                        Icon(
+                                          Icons.arrow_forward,
+                                          color: Colors.white,
+                                        )
+                                      ],
+                                    ),
+                                  ),
                                 )
                               ],
                             ),
-                          ),
-                        )
-                      ],
+                            SizedBox(width: 10),
+                            Image.asset(
+                              'images/bannerDoctor.png',
+                              width: 127,
+                              height: 150,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        margin:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                        padding: EdgeInsets.all(20),
+                        decoration: BoxDecoration(
+                          color: HexColor("#77D7F7"),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Row(
+                          children: [
+                            Column(
+                              children: [
+                                Text(
+                                  '¡Vacunas al día, \nSalud asegurada!',
+                                  style: GoogleFonts.aBeeZee(
+                                    textStyle: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 20,
+                                ),
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (BuildContext context) =>
+                                              Principal()),
+                                    );
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        color: HexColor("EC6337"),
+                                        borderRadius:
+                                            BorderRadius.circular(10)),
+                                    padding: EdgeInsets.all(6),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          " Carné digital",
+                                          style: GoogleFonts.aBeeZee(
+                                            textStyle: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
+                                        const SizedBox(width: 10),
+                                        Icon(
+                                          Icons.arrow_forward,
+                                          color: Colors.white,
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                            SizedBox(width: 10),
+                            Image.asset(
+                              'images/bannerVacunaMed.png',
+                              width: 140,
+                              height: 150,
+                            ),
+                          ],
+                        ),
+                      ),
+                      // Otras imágenes aquí...
+                    ],
+                    options: CarouselOptions(
+                      height: 180.0,
+                      enlargeCenterPage: true,
+                      autoPlay: true,
+                      aspectRatio: 16 / 9,
+                      autoPlayCurve: Curves.fastOutSlowIn,
+                      enableInfiniteScroll: true,
+                      autoPlayAnimationDuration: Duration(milliseconds: 500),
+                      viewportFraction: 0.99,
                     ),
-                    SizedBox(width: 10),
-                    Image.asset(
-                      'images/bannerDoctor.png',
-                      width: 127,
-                      height: 150,
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
               SizedBox(
                 height: 10,
@@ -489,49 +923,6 @@ class _MenuPageState extends State<MenuPage> {
                       ),
                     ),
                   ),
-                  /*GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (BuildContext context) => Principal()),
-                      );
-                    },
-                    child: Container(
-                      width: 70,
-                      height: 100,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(
-                            width: 50,
-                            height: 50,
-                            decoration: BoxDecoration(
-                              color: HexColor("08CAF7"),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: Icon(
-                              Icons.pets,
-                              color: Colors.white,
-                              size: 30,
-                            ),
-                          ),
-                          SizedBox(height: 5),
-                          Text(
-                            'Mis Mascotas',
-                            style: GoogleFonts.aBeeZee(
-                              textStyle: TextStyle(
-                                color: Colors.black,
-                                fontSize: 13,
-                              ),
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),*/
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -576,43 +967,56 @@ class _MenuPageState extends State<MenuPage> {
                       ),
                     ),
                   ),
-                ],
-              ),
-              /*Row(
-                children: [
-                  SizedBox(
-                    width: 250,
-                  ),
-                  GestureDetector(
-                    onTap: () {},
-                    child: Container(
-                      decoration: BoxDecoration(
-                          color: HexColor("EC6337"),
-                          borderRadius: BorderRadius.circular(10)),
-                      padding: EdgeInsets.all(5),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            "  Ver más",
-                            style: GoogleFonts.aBeeZee(
-                              textStyle: TextStyle(
-                                fontWeight: FontWeight.bold,
+                  /*Banner(
+                    message: 'Nuevo',
+                    location: BannerLocation.topStart,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) => Principal()),
+                        );
+                      },
+                      child: Container(
+                        width: 70,
+                        height: 120,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 50,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: HexColor("08CAF7"),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Icon(
+                                IcoFontIcons.injectionSyringe,
                                 color: Colors.white,
+                                size: 30,
                               ),
                             ),
-                          ),
-                          const SizedBox(width: 5),
-                          Icon(
-                            Icons.arrow_forward,
-                            color: Colors.white,
-                          )
-                        ],
+                            SizedBox(height: 5),
+                            Text(
+                              'Comunidad',
+                              style: GoogleFonts.aBeeZee(
+                                textStyle: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 13,
+                                ),
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(height: 15),
+                          ],
+                        ),
                       ),
                     ),
-                  )
+                  ),*/
                 ],
-              ),*/
+              ),
               SizedBox(
                 height: 10,
               ),
@@ -753,7 +1157,7 @@ class _MenuPageState extends State<MenuPage> {
                         : buildNewestPet() == null
                             ? Text("data")
                             : Container(
-                                height: 200,
+                                height: 240,
                                 child: ListView(
                                   physics: BouncingScrollPhysics(),
                                   scrollDirection: Axis.horizontal,
@@ -784,7 +1188,7 @@ class _MenuPageState extends State<MenuPage> {
                             SizedBox(width: 10),
                             Expanded(
                               child: Text(
-                                'Los gatos se comunican con una variedad de expresiones faciales y corporales.',
+                                'No tienes notificaciones pendientes',
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,

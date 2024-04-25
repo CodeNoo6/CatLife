@@ -16,6 +16,7 @@ import '../Shorcut.dart';
 import '../Utilities/Utilities.dart';
 import '../generated/l10n.dart';
 import '../pets/VacunasGPublic.dart';
+import '../testMessaging/eje.dart';
 import '../testMessaging/firebase_api.dart';
 import 'IntroPage.dart';
 import 'MenuPage.dart';
@@ -23,7 +24,10 @@ import 'MenuPage.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  //await FirebaseApi().initNotifications();
+  /*await NotificationController.initializeLocalNotifications(debug: true);
+  await NotificationController.initializeRemoteNotifications(debug: true);
+  await NotificationController.initializeIsolateReceivePort();
+  await NotificationController.getInitialNotificationAction();*/
   runApp(MyApp());
 }
 
@@ -42,6 +46,7 @@ class _MyAppState extends State<MyApp> {
   Map<String, List<Map<String, dynamic>>> datos;
 
   Future<void> _initializeData() async {
+    await Utilities.guardaTips("");
     correo = await Utilities.obtenerCorreo();
     datos = await Database.obtenerFundacionesYFelinos();
   }

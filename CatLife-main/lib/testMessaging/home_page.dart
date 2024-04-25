@@ -1,4 +1,4 @@
-import 'package:firebase_messaging/firebase_messaging.dart';
+/*import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
@@ -88,3 +88,4 @@ class _HomePageState extends State<HomePage> {
     return (deviceToken == null) ? "" : deviceToken;
   }
 }
+*/

@@ -107,7 +107,13 @@ class _AllVAcunasViewState extends State<AllVAcunasView> {
               },
               icon: Icon(Icons.vaccines),
               backgroundColor: HexColor("EC6337"), // Color del botón
-              label: Text("Nueva Vacuna"),
+              label: Text("Nueva Vacuna",
+                  style: GoogleFonts.aBeeZee(
+                    textStyle: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  )),
             ),
             body: RefreshIndicator(
               onRefresh: () async {
@@ -334,7 +340,7 @@ class _AllVAcunasViewState extends State<AllVAcunasView> {
                                                     color: Colors.blueGrey[600],
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            0),
+                                                            10),
                                                   ),
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal: 15,
@@ -354,6 +360,40 @@ class _AllVAcunasViewState extends State<AllVAcunasView> {
                                                         "Dosis aplicadas: " +
                                                             element['dosis']
                                                                 .toString(),
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 14,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                SizedBox(
+                                                  height: 10,
+                                                ),
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.green[600],
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            10),
+                                                  ),
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 15,
+                                                      vertical: 8),
+                                                  child: Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.min,
+                                                    children: [
+                                                      Icon(
+                                                        IcoFontIcons.stopwatch,
+                                                        color: Colors.white,
+                                                        size: 20,
+                                                      ),
+                                                      SizedBox(width: 5),
+                                                      Text(
+                                                        element['frecuencia']
+                                                            .toString(),
                                                         style: TextStyle(
                                                           color: Colors.white,
                                                           fontSize: 14,

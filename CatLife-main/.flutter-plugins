@@ -1,4 +1,6 @@
 # This is a generated file; do not edit or check into version control.
+awesome_notifications=/Users/gandalf/.pub-cache/hosted/pub.dev/awesome_notifications-0.7.4+1/
+awesome_notifications_fcm=/Users/gandalf/.pub-cache/hosted/pub.dev/awesome_notifications_fcm-0.7.4/
 camera=/Users/gandalf/.pub-cache/hosted/pub.dev/camera-0.10.5+2/
 camera_android=/Users/gandalf/.pub-cache/hosted/pub.dev/camera_android-0.10.8+2/
 camera_avfoundation=/Users/gandalf/.pub-cache/hosted/pub.dev/camera_avfoundation-0.9.13+2/
@@ -11,6 +13,7 @@ firebase_messaging=/Users/gandalf/.pub-cache/hosted/pub.dev/firebase_messaging-1
 firebase_messaging_web=/Users/gandalf/.pub-cache/hosted/pub.dev/firebase_messaging_web-3.2.0/
 flutter_plugin_android_lifecycle=/Users/gandalf/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.9/
 flutter_scalable_ocr=/Users/gandalf/.pub-cache/hosted/pub.dev/flutter_scalable_ocr-1.0.1/
+fluttertoast=/Users/gandalf/.pub-cache/hosted/pub.dev/fluttertoast-8.2.5/
 geolocator=/Users/gandalf/.pub-cache/hosted/pub.dev/geolocator-9.0.2/
 geolocator_android=/Users/gandalf/.pub-cache/hosted/pub.dev/geolocator_android-4.4.1/
 geolocator_apple=/Users/gandalf/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.6/
@@ -48,6 +51,7 @@ shared_preferences_web=/Users/gandalf/.pub-cache/hosted/pub.dev/shared_preferenc
 shared_preferences_windows=/Users/gandalf/.pub-cache/hosted/pub.dev/shared_preferences_windows-2.2.0/
 sign_in_with_apple=/Users/gandalf/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0/
 sign_in_with_apple_web=/Users/gandalf/.pub-cache/hosted/pub.dev/sign_in_with_apple_web-1.0.1/
+tflite_flutter=/Users/gandalf/.pub-cache/hosted/pub.dev/tflite_flutter-0.10.4/
 url_launcher=/Users/gandalf/.pub-cache/hosted/pub.dev/url_launcher-6.1.11/
 url_launcher_android=/Users/gandalf/.pub-cache/hosted/pub.dev/url_launcher_android-6.2.0/
 url_launcher_ios=/Users/gandalf/.pub-cache/hosted/pub.dev/url_launcher_ios-6.2.0/

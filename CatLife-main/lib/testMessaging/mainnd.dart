@@ -2,12 +2,12 @@ import 'package:catage/testMessaging/home_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-Future<void> main() async {
+/*Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   //initialize firebase from firebase core plugin
   await Firebase.initializeApp();
   runApp(MyApp(homeScreen: HomePage()));
-}
+}*/
 
 class MyApp extends StatefulWidget {
   final Widget homeScreen;

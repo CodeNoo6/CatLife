@@ -23,7 +23,16 @@ import 'package:image_picker/image_picker.dart';
 import '../Modelo/Vacuna.dart';
 import '../View_home.dart';
 import '../age.dart';
+
+import 'dart:isolate';
+import 'dart:ui';
+
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+
 import '../generated/l10n.dart';
+import '../testMessaging/eje.dart';
 
 class Result extends StatelessWidget {
   const Result({
@@ -63,6 +72,16 @@ class _VacunaViewState extends State<VacunaView> {
   String dFProxima = "va";
   final StreamController<String> controller = StreamController<String>();
   String savedText;
+  String _selectedCountry;
+  List<String> _countries = [
+    'Frecuencia de aplicación',
+    'Cada 15 días',
+    'Cada semana',
+    'Cada mes',
+    'Cada año',
+    'Vacuna completada',
+  ];
+  String errorVacuna;
 
   void setText(value) {
     controller.add(value);
@@ -135,26 +154,36 @@ class _VacunaViewState extends State<VacunaView> {
                               if (dFProxima == "va") {
                                 dFProxima = "v";
                               } else {
+                                //NotificationController.createNewNotification();
                                 if (_formKey.currentState.validate()) {
-                                  Vacuna objVacuna = new Vacuna();
-                                  objVacuna.nombre = tEVacuna.text;
-                                  objVacuna.fechaAplicacion = dFAplicacion;
-                                  objVacuna.nombreVeterinario = "";
-                                  objVacuna.proximAplicacion = "";
-                                  objVacuna.dosis = 0;
-                                  objVacuna.codigoVet = 0;
-                                  Database.agregarVacunaAFelino(
-                                      widget.pet.nombre, objVacuna);
-                                  Navigator.pushReplacement(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (BuildContext context) =>
-                                          AllVAcunasView(
-                                        pet: widget.pet,
-                                        objPropietario: widget.objPropietario,
+                                  if (_selectedCountry ==
+                                      "Frecuencia de aplicación") {
+                                    errorVacuna =
+                                        "Frecuencia de aplicación inválida";
+                                  }
+                                  if (_selectedCountry !=
+                                      "Frecuencia de aplicación") {
+                                    Vacuna objVacuna = new Vacuna();
+                                    objVacuna.nombre = tEVacuna.text;
+                                    objVacuna.fechaAplicacion = dFAplicacion;
+                                    objVacuna.proximAplicacion =
+                                        _selectedCountry;
+                                    objVacuna.nombreVeterinario = "";
+                                    objVacuna.dosis = 0;
+                                    objVacuna.codigoVet = 0;
+                                    Database.agregarVacunaAFelino(
+                                        widget.pet.nombre, objVacuna);
+                                    Navigator.pushReplacement(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            AllVAcunasView(
+                                          pet: widget.pet,
+                                          objPropietario: widget.objPropietario,
+                                        ),
                                       ),
-                                    ),
-                                  );
+                                    );
+                                  }
                                 }
                               }
                             }
@@ -292,12 +321,21 @@ class _VacunaViewState extends State<VacunaView> {
                                   controller: tEVacuna,
                                   keyboardType: TextInputType.text,
                                   textAlign: TextAlign.center,
-                                  decoration: new InputDecoration(
-                                      labelText: "Nombre de la Vacuna",
-                                      border: new OutlineInputBorder(
-                                        borderRadius:
-                                            new BorderRadius.circular(10.0),
-                                      )),
+                                  decoration: InputDecoration(
+                                    hintText: "Vacuna",
+                                    hintStyle: GoogleFonts.aBeeZee(
+                                      textStyle: TextStyle(
+                                        color: Colors.grey[600],
+                                        fontSize: 13,
+                                      ),
+                                    ),
+                                    border: OutlineInputBorder(
+                                      borderRadius:
+                                          new BorderRadius.circular(10.0),
+                                    ),
+                                    contentPadding: EdgeInsets.symmetric(
+                                        vertical: 8.0, horizontal: 10.0),
+                                  ),
                                   validator: (value) {
                                     if (value == null || value.isEmpty) {
                                       return 'Este campo es requerido';
@@ -313,6 +351,7 @@ class _VacunaViewState extends State<VacunaView> {
                                   initialValue: getDateNow()
                                       .toString(), // Obtener la fecha actual utilizando el método getDateNow()
                                   locale: const Locale("es"),
+                                  enabled: false,
                                   firstDate: DateTime(2000),
                                   lastDate: DateTime(2100),
                                   dateLabelText: 'Fecha de aplicación',
@@ -334,7 +373,59 @@ class _VacunaViewState extends State<VacunaView> {
                                   },
                                 ),
                                 SizedBox(
-                                  height: 10.0,
+                                  height: 30.0,
+                                ),
+                                DropdownButtonFormField<String>(
+                                  value: _selectedCountry,
+                                  decoration: InputDecoration(
+                                    errorText: errorVacuna,
+                                    hintText:
+                                        'Frecuencia de aplicación inválida',
+                                    hintStyle: TextStyle(
+                                        color: Colors.grey[600], fontSize: 13),
+                                    border: OutlineInputBorder(
+                                      borderRadius:
+                                          new BorderRadius.circular(10.0),
+                                    ),
+                                    contentPadding: EdgeInsets.symmetric(
+                                        vertical: 8.0, horizontal: 10.0),
+                                  ),
+                                  onChanged: (String newValue) {
+                                    setState(() {
+                                      _selectedCountry = newValue;
+                                    });
+                                  },
+                                  validator: (value) {
+                                    if (value == null ||
+                                        value.isEmpty ||
+                                        value ==
+                                            'Frecuencia de aplicación inválida') {
+                                      return 'Frecuencia de aplicación inválida';
+                                    }
+                                    return null;
+                                  },
+                                  isExpanded: true,
+                                  items: _countries
+                                      .map<DropdownMenuItem<String>>(
+                                          (String value) {
+                                    return DropdownMenuItem<String>(
+                                      value: value,
+                                      child: Align(
+                                          alignment: Alignment.center,
+                                          child: Text(
+                                            value,
+                                            style: TextStyle(
+                                                color: Colors.grey[600],
+                                                fontSize: 13),
+                                          )),
+                                    );
+                                  }).toList(),
+                                  hint: Align(
+                                      alignment: Alignment.center,
+                                      child: Text(_countries[0],
+                                          style: TextStyle(
+                                              color: Colors.grey[600],
+                                              fontSize: 13))),
                                 ),
                                 dFAplicacion == "v" || dFAplicacion == ""
                                     ? Text(

@@ -16,12 +16,12 @@
         "source": "/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/app/intermediates/merged_res/debug/drawable_doctor.png.flat",
-        "source": "/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/res/drawable/doctor.png"
-    },
-    {
         "merged": "/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/app/intermediates/merged_res/debug/drawable-v21_vaccine_cat.xml.flat",
         "source": "/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/res/drawable-v21/vaccine_cat.xml"
+    },
+    {
+        "merged": "/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/app/intermediates/merged_res/debug/drawable_doctor.png.flat",
+        "source": "/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/android/app/src/main/res/drawable/doctor.png"
     },
     {
         "merged": "/Users/gandalf/Documents/GitHub/CatLife/CatLife-main/build/app/intermediates/merged_res/debug/drawable_logo.png.flat",

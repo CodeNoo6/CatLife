@@ -395,7 +395,7 @@ class Database {
       'nVacuna': nuevaVacuna.nombre,
       'fAplicacion': nuevaVacuna.fechaAplicacion,
       'veterinario': nuevaVacuna.nombreVeterinario,
-      'pAplicacion': nuevaVacuna.proximAplicacion,
+      'frecuencia': nuevaVacuna.proximAplicacion,
       'dosis': nuevaVacuna.dosis,
       'codigoVet': nuevaVacuna.codigoVet
     };
@@ -618,6 +618,12 @@ class Database {
       felinos.removeWhere((felino) => felino["Nombre"] == nFelino);
 
       await collection.update({'Felinos': felinos});
+
+      // Eliminar vacunas asociadas al felino eliminado
+      List<Map<String, dynamic>> vacunas =
+          List<Map<String, dynamic>>.from(userData["Vacunas"]);
+      vacunas.removeWhere((vacuna) => vacuna['felino'] == nFelino);
+      await collection.update({'Vacunas': vacunas});
 
       return true; // La eliminación fue exitosa
     } catch (error) {

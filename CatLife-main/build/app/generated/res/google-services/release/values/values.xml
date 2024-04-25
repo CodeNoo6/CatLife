@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">477759819895-hatlqgdqkm0ro4kj1f98gi7gu1fuh0vb.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">477759819895</string>
+    <string name="google_api_key" translatable="false">AIzaSyA3Ay6ZjnOSvp5gpOl6PMOnS91caNVslfo</string>
+    <string name="google_app_id" translatable="false">1:477759819895:android:c57443870779aa5a697672</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA3Ay6ZjnOSvp5gpOl6PMOnS91caNVslfo</string>
+    <string name="google_storage_bucket" translatable="false">catlife-ae128.appspot.com</string>
+    <string name="project_id" translatable="false">catlife-ae128</string>
+</resources>
